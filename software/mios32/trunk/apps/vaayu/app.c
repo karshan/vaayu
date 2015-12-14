@@ -192,8 +192,8 @@ void interpolate(u8 *out, u8 *a, u8 *b, int s) {
 }
 
 void set_color_by_encoder(u8 *c, int v) {
-    u8 blue[] = { 32, 0, 32 };
-    u8 white[] = { 0, 0, 64 };
+    u8 blue[] = { 0, 0, 64 };
+    u8 white[] = { 32, 32, 32 };
     u8 red[] = { 0, 128, 0 };
     if (v <= 64) {
         interpolate(c, blue, white, v * 2);

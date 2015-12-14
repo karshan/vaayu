@@ -2874,7 +2874,7 @@ END GROUP
  *(.flashtext)
                 0x08010000                . = ALIGN (0x4)
 
-.text           0x08010000     0x7aac
+.text           0x08010000     0x7aa8
                 0x08010000                . = ALIGN (0x4)
  CREATE_OBJECT_SYMBOLS
  *(.text .text.* .gnu.linkonce.t.*)
@@ -2915,1065 +2915,1065 @@ END GROUP
                 0x080103a0                interpolate
  *fill*         0x080103c2        0x2 00
  .text.set_color_by_encoder
-                0x080103c4       0x50 project_build/app.o
+                0x080103c4       0x4c project_build/app.o
                 0x080103c4                set_color_by_encoder
  .text.color_leds_by_encoder_state
-                0x08010414       0x54 project_build/app.o
-                0x08010414                color_leds_by_encoder_state
+                0x08010410       0x54 project_build/app.o
+                0x08010410                color_leds_by_encoder_state
  .text.APP_Tick
-                0x08010468       0x9c project_build/app.o
-                0x08010468                APP_Tick
+                0x08010464       0x9c project_build/app.o
+                0x08010464                APP_Tick
  .text.TASK_Hooks
-                0x08010504       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08010500       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
  .text.APP_MIDI_Tick
-                0x08010528        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x08010528                APP_MIDI_Tick
- *fill*         0x0801052a        0x2 00
+                0x08010524        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08010524                APP_MIDI_Tick
+ *fill*         0x08010526        0x2 00
  .text.TASK_MIDI_Hooks
-                0x0801052c       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08010528       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
  .text.startup.main
-                0x08010560       0x90 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x08010560                main
+                0x0801055c       0x90 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x0801055c                main
  .text.vApplicationTickHook
-                0x080105f0        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x080105f0                vApplicationTickHook
+                0x080105ec        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x080105ec                vApplicationTickHook
  .text.vApplicationIdleHook
-                0x080105f4        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x080105f4                vApplicationIdleHook
- .text._abort   0x080105f8       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x080105f8                _abort
+                0x080105f0        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x080105f0                vApplicationIdleHook
+ .text._abort   0x080105f4       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x080105f4                _abort
  .text.HardFault_Handler_c
-                0x08010638      0x10c project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x08010638                HardFault_Handler_c
+                0x08010634      0x10c project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08010634                HardFault_Handler_c
  .text.HardFault_Handler
-                0x08010744       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
-                0x08010744                HardFault_Handler
+                0x08010740       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08010740                HardFault_Handler
  .text.prvAddCurrentTaskToDelayedList
-                0x08010758       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010754       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
  .text.xTaskGenericCreate
-                0x080107a8      0x194 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x080107a8                xTaskGenericCreate
+                0x080107a4      0x194 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x080107a4                xTaskGenericCreate
  .text.vTaskStartScheduler
-                0x0801093c       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x0801093c                vTaskStartScheduler
+                0x08010938       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010938                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x08010988       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x08010988                vTaskSuspendAll
+                0x08010984       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010984                vTaskSuspendAll
  .text.xTaskGetTickCount
-                0x08010998       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x08010998                xTaskGetTickCount
+                0x08010994       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010994                xTaskGetTickCount
  .text.vTaskIncrementTick
-                0x080109b0       0xec project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x080109b0                vTaskIncrementTick
+                0x080109ac       0xec project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x080109ac                vTaskIncrementTick
  .text.xTaskResumeAll
-                0x08010a9c       0xc4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x08010a9c                xTaskResumeAll
+                0x08010a98       0xc4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010a98                xTaskResumeAll
  .text.prvIdleTask
-                0x08010b60       0x68 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010b5c       0x68 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
  .text.vTaskDelayUntil
-                0x08010bc8       0x78 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x08010bc8                vTaskDelayUntil
+                0x08010bc4       0x78 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010bc4                vTaskDelayUntil
  .text.vTaskSwitchContext
-                0x08010c40       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
-                0x08010c40                vTaskSwitchContext
+                0x08010c3c       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08010c3c                vTaskSwitchContext
  .text.vListInitialise
-                0x08010c94       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
-                0x08010c94                vListInitialise
+                0x08010c90       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+                0x08010c90                vListInitialise
  .text.vListInitialiseItem
-                0x08010caa        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
-                0x08010caa                vListInitialiseItem
+                0x08010ca6        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+                0x08010ca6                vListInitialiseItem
  .text.vListInsertEnd
-                0x08010cb0       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
-                0x08010cb0                vListInsertEnd
+                0x08010cac       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+                0x08010cac                vListInsertEnd
  .text.vListInsert
-                0x08010cca       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
-                0x08010cca                vListInsert
+                0x08010cc6       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+                0x08010cc6                vListInsert
  .text.uxListRemove
-                0x08010cfa       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
-                0x08010cfa                uxListRemove
+                0x08010cf6       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+                0x08010cf6                uxListRemove
  .text.prvPortStartFirstTask
-                0x08010d1c       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d18       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
  .text.pxPortInitialiseStack
-                0x08010d30       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d30                pxPortInitialiseStack
- *fill*         0x08010d46        0x2 00
+                0x08010d2c       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d2c                pxPortInitialiseStack
+ *fill*         0x08010d42        0x2 00
  .text.vPortSVCHandler
-                0x08010d48       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d48                vPortSVCHandler
+                0x08010d44       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d44                vPortSVCHandler
  .text.vPortYieldFromISR
-                0x08010d68       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d68                vPortYieldFromISR
+                0x08010d64       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d64                vPortYieldFromISR
  .text.ulPortSetInterruptMask
-                0x08010d78       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d78                ulPortSetInterruptMask
+                0x08010d74       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d74                ulPortSetInterruptMask
  .text.vPortEnterCritical
-                0x08010d88       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d88                vPortEnterCritical
+                0x08010d84       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d84                vPortEnterCritical
  .text.vPortClearInterruptMask
-                0x08010d9c        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010d9c                vPortClearInterruptMask
- *fill*         0x08010da2        0x2 00
+                0x08010d98        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010d98                vPortClearInterruptMask
+ *fill*         0x08010d9e        0x2 00
  .text.vPortExitCritical
-                0x08010da4       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010da4                vPortExitCritical
+                0x08010da0       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010da0                vPortExitCritical
  .text.xPortPendSVHandler
-                0x08010db8       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010db8                xPortPendSVHandler
+                0x08010db4       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010db4                xPortPendSVHandler
  .text.xPortSysTickHandler
-                0x08010df4       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010df4                xPortSysTickHandler
+                0x08010df0       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010df0                xPortSysTickHandler
  .text.vPortSetupTimerInterrupt
-                0x08010e14       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010e14                vPortSetupTimerInterrupt
+                0x08010e10       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010e10                vPortSetupTimerInterrupt
  .text.xPortStartScheduler
-                0x08010e2c       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
-                0x08010e2c                xPortStartScheduler
+                0x08010e28       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+                0x08010e28                xPortStartScheduler
  .text.umm_disconnect_from_free_list
-                0x08010e5c       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+                0x08010e58       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
  .text.umm_assimilate_up
-                0x08010e88       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+                0x08010e84       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
  .text.vPortFree
-                0x08010ed4       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
-                0x08010ed4                vPortFree
+                0x08010ed0       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+                0x08010ed0                vPortFree
  .text.pvPortMalloc
-                0x08010f48      0x11c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
-                0x08010f48                pvPortMalloc
+                0x08010f44      0x11c project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+                0x08010f44                pvPortMalloc
  .text.Default_Handler
-                0x08011064        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
-                0x08011064                RTC_Alarm_IRQHandler
-                0x08011064                HASH_RNG_IRQHandler
-                0x08011064                EXTI2_IRQHandler
-                0x08011064                TIM8_CC_IRQHandler
-                0x08011064                DebugMon_Handler
-                0x08011064                TIM1_CC_IRQHandler
-                0x08011064                DMA2_Stream5_IRQHandler
-                0x08011064                DMA1_Stream5_IRQHandler
-                0x08011064                SysTick_Handler
-                0x08011064                PVD_IRQHandler
-                0x08011064                SDIO_IRQHandler
-                0x08011064                TAMP_STAMP_IRQHandler
-                0x08011064                PendSV_Handler
-                0x08011064                NMI_Handler
-                0x08011064                CAN2_RX1_IRQHandler
-                0x08011064                EXTI3_IRQHandler
-                0x08011064                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08011064                TIM1_UP_TIM10_IRQHandler
-                0x08011064                TIM8_UP_TIM13_IRQHandler
-                0x08011064                I2C3_ER_IRQHandler
-                0x08011064                EXTI0_IRQHandler
-                0x08011064                DMA1_Stream2_IRQHandler
-                0x08011064                CAN1_RX0_IRQHandler
-                0x08011064                FPU_IRQHandler
-                0x08011064                OTG_HS_WKUP_IRQHandler
-                0x08011064                UsageFault_Handler
-                0x08011064                CAN2_SCE_IRQHandler
-                0x08011064                DMA2_Stream2_IRQHandler
-                0x08011064                SPI1_IRQHandler
-                0x08011064                TIM6_DAC_IRQHandler
-                0x08011064                TIM1_BRK_TIM9_IRQHandler
-                0x08011064                DCMI_IRQHandler
-                0x08011064                CAN2_RX0_IRQHandler
-                0x08011064                DMA2_Stream3_IRQHandler
-                0x08011064                USART6_IRQHandler
-                0x08011064                CRYP_IRQHandler
-                0x08011064                CAN1_RX1_IRQHandler
-                0x08011064                UART5_IRQHandler
-                0x08011064                DMA2_Stream0_IRQHandler
-                0x08011064                TIM4_IRQHandler
-                0x08011064                DMA1_Stream6_IRQHandler
-                0x08011064                DMA1_Stream1_IRQHandler
-                0x08011064                UART4_IRQHandler
-                0x08011064                RCC_IRQHandler
-                0x08011064                TIM8_BRK_TIM12_IRQHandler
-                0x08011064                Default_Handler
-                0x08011064                EXTI15_10_IRQHandler
-                0x08011064                ADC_IRQHandler
-                0x08011064                DMA1_Stream7_IRQHandler
-                0x08011064                TIM7_IRQHandler
-                0x08011064                CAN2_TX_IRQHandler
-                0x08011064                DMA2_Stream7_IRQHandler
-                0x08011064                I2C3_EV_IRQHandler
-                0x08011064                EXTI9_5_IRQHandler
-                0x08011064                RTC_WKUP_IRQHandler
-                0x08011064                ETH_WKUP_IRQHandler
-                0x08011064                SPI2_IRQHandler
-                0x08011064                OTG_HS_EP1_IN_IRQHandler
-                0x08011064                MemManage_Handler
-                0x08011064                DMA1_Stream0_IRQHandler
-                0x08011064                CAN1_TX_IRQHandler
-                0x08011064                SVC_Handler
-                0x08011064                EXTI4_IRQHandler
-                0x08011064                FSMC_IRQHandler
-                0x08011064                ETH_IRQHandler
-                0x08011064                OTG_HS_EP1_OUT_IRQHandler
-                0x08011064                WWDG_IRQHandler
-                0x08011064                OTG_FS_WKUP_IRQHandler
-                0x08011064                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08011064                OTG_HS_IRQHandler
-                0x08011064                EXTI1_IRQHandler
-                0x08011064                DMA2_Stream1_IRQHandler
-                0x08011064                CAN1_SCE_IRQHandler
-                0x08011064                FLASH_IRQHandler
-                0x08011064                DMA2_Stream4_IRQHandler
-                0x08011064                BusFault_Handler
-                0x08011064                USART1_IRQHandler
-                0x08011064                SPI3_IRQHandler
-                0x08011064                DMA1_Stream4_IRQHandler
-                0x08011064                DMA2_Stream6_IRQHandler
-                0x08011064                DMA1_Stream3_IRQHandler
- *fill*         0x08011066        0x2 00
+                0x08011060        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
+                0x08011060                RTC_Alarm_IRQHandler
+                0x08011060                HASH_RNG_IRQHandler
+                0x08011060                EXTI2_IRQHandler
+                0x08011060                TIM8_CC_IRQHandler
+                0x08011060                DebugMon_Handler
+                0x08011060                TIM1_CC_IRQHandler
+                0x08011060                DMA2_Stream5_IRQHandler
+                0x08011060                DMA1_Stream5_IRQHandler
+                0x08011060                SysTick_Handler
+                0x08011060                PVD_IRQHandler
+                0x08011060                SDIO_IRQHandler
+                0x08011060                TAMP_STAMP_IRQHandler
+                0x08011060                PendSV_Handler
+                0x08011060                NMI_Handler
+                0x08011060                CAN2_RX1_IRQHandler
+                0x08011060                EXTI3_IRQHandler
+                0x08011060                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08011060                TIM1_UP_TIM10_IRQHandler
+                0x08011060                TIM8_UP_TIM13_IRQHandler
+                0x08011060                I2C3_ER_IRQHandler
+                0x08011060                EXTI0_IRQHandler
+                0x08011060                DMA1_Stream2_IRQHandler
+                0x08011060                CAN1_RX0_IRQHandler
+                0x08011060                FPU_IRQHandler
+                0x08011060                OTG_HS_WKUP_IRQHandler
+                0x08011060                UsageFault_Handler
+                0x08011060                CAN2_SCE_IRQHandler
+                0x08011060                DMA2_Stream2_IRQHandler
+                0x08011060                SPI1_IRQHandler
+                0x08011060                TIM6_DAC_IRQHandler
+                0x08011060                TIM1_BRK_TIM9_IRQHandler
+                0x08011060                DCMI_IRQHandler
+                0x08011060                CAN2_RX0_IRQHandler
+                0x08011060                DMA2_Stream3_IRQHandler
+                0x08011060                USART6_IRQHandler
+                0x08011060                CRYP_IRQHandler
+                0x08011060                CAN1_RX1_IRQHandler
+                0x08011060                UART5_IRQHandler
+                0x08011060                DMA2_Stream0_IRQHandler
+                0x08011060                TIM4_IRQHandler
+                0x08011060                DMA1_Stream6_IRQHandler
+                0x08011060                DMA1_Stream1_IRQHandler
+                0x08011060                UART4_IRQHandler
+                0x08011060                RCC_IRQHandler
+                0x08011060                TIM8_BRK_TIM12_IRQHandler
+                0x08011060                Default_Handler
+                0x08011060                EXTI15_10_IRQHandler
+                0x08011060                ADC_IRQHandler
+                0x08011060                DMA1_Stream7_IRQHandler
+                0x08011060                TIM7_IRQHandler
+                0x08011060                CAN2_TX_IRQHandler
+                0x08011060                DMA2_Stream7_IRQHandler
+                0x08011060                I2C3_EV_IRQHandler
+                0x08011060                EXTI9_5_IRQHandler
+                0x08011060                RTC_WKUP_IRQHandler
+                0x08011060                ETH_WKUP_IRQHandler
+                0x08011060                SPI2_IRQHandler
+                0x08011060                OTG_HS_EP1_IN_IRQHandler
+                0x08011060                MemManage_Handler
+                0x08011060                DMA1_Stream0_IRQHandler
+                0x08011060                CAN1_TX_IRQHandler
+                0x08011060                SVC_Handler
+                0x08011060                EXTI4_IRQHandler
+                0x08011060                FSMC_IRQHandler
+                0x08011060                ETH_IRQHandler
+                0x08011060                OTG_HS_EP1_OUT_IRQHandler
+                0x08011060                WWDG_IRQHandler
+                0x08011060                OTG_FS_WKUP_IRQHandler
+                0x08011060                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08011060                OTG_HS_IRQHandler
+                0x08011060                EXTI1_IRQHandler
+                0x08011060                DMA2_Stream1_IRQHandler
+                0x08011060                CAN1_SCE_IRQHandler
+                0x08011060                FLASH_IRQHandler
+                0x08011060                DMA2_Stream4_IRQHandler
+                0x08011060                BusFault_Handler
+                0x08011060                USART1_IRQHandler
+                0x08011060                SPI3_IRQHandler
+                0x08011060                DMA1_Stream4_IRQHandler
+                0x08011060                DMA2_Stream6_IRQHandler
+                0x08011060                DMA1_Stream3_IRQHandler
+ *fill*         0x08011062        0x2 00
  .text.Reset_Handler
-                0x08011068       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
-                0x08011068                Reset_Handler
- .text._init    0x080110b4        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
-                0x080110b4                _init
- *fill*         0x080110b6        0x2 00
+                0x08011064       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
+                0x08011064                Reset_Handler
+ .text._init    0x080110b0        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
+                0x080110b0                _init
+ *fill*         0x080110b2        0x2 00
  .text.MIOS32_MIDI_Init
-                0x080110b8       0xc8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x080110b8                MIOS32_MIDI_Init
+                0x080110b4       0xc8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080110b4                MIOS32_MIDI_Init
  .text.MIOS32_MIDI_SendPackage
-                0x08011180       0x84 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011180                MIOS32_MIDI_SendPackage
+                0x0801117c       0x84 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x0801117c                MIOS32_MIDI_SendPackage
  .text.MIOS32_MIDI_SendEvent
-                0x08011204       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011204                MIOS32_MIDI_SendEvent
+                0x08011200       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011200                MIOS32_MIDI_SendEvent
  .text.MIOS32_MIDI_SendCC
-                0x08011222        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011222                MIOS32_MIDI_SendCC
+                0x0801121e        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x0801121e                MIOS32_MIDI_SendCC
  .text.MIOS32_MIDI_SendSysEx
-                0x0801122a       0x82 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x0801122a                MIOS32_MIDI_SendSysEx
+                0x08011226       0x82 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011226                MIOS32_MIDI_SendSysEx
  .text.MIOS32_MIDI_SYSEX_SendAckStr
-                0x080112ac       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080112a8       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .text.MIOS32_MIDI_SYSEX_SendAck
-                0x08011308       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011304       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .text.MIOS32_MIDI_SendDebugStringHeader
-                0x08011350       0x68 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011350                MIOS32_MIDI_SendDebugStringHeader
+                0x0801134c       0x68 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x0801134c                MIOS32_MIDI_SendDebugStringHeader
  .text.MIOS32_MIDI_SendDebugStringBody
-                0x080113b8       0x6a project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x080113b8                MIOS32_MIDI_SendDebugStringBody
+                0x080113b4       0x6a project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080113b4                MIOS32_MIDI_SendDebugStringBody
  .text.MIOS32_MIDI_SendDebugStringFooter
-                0x08011422       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011422                MIOS32_MIDI_SendDebugStringFooter
+                0x0801141e       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x0801141e                MIOS32_MIDI_SendDebugStringFooter
  .text.MIOS32_MIDI_SendDebugString
-                0x0801143c       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x0801143c                MIOS32_MIDI_SendDebugString
+                0x08011438       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011438                MIOS32_MIDI_SendDebugString
  .text.MIOS32_MIDI_SendDebugMessage
-                0x08011474       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011474                MIOS32_MIDI_SendDebugMessage
+                0x08011470       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011470                MIOS32_MIDI_SendDebugMessage
  .text.MIOS32_MIDI_TimeOut
-                0x080114c4       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080114c0       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .text.MIOS32_MIDI_Periodic_mS
-                0x08011514       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011514                MIOS32_MIDI_Periodic_mS
+                0x08011510       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011510                MIOS32_MIDI_Periodic_mS
  .text.MIOS32_MIDI_SendByteToRxCallback
-                0x08011548       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011548                MIOS32_MIDI_SendByteToRxCallback
+                0x08011544       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011544                MIOS32_MIDI_SendByteToRxCallback
  .text.MIOS32_MIDI_SendPackageToRxCallback
-                0x0801155c       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x0801155c                MIOS32_MIDI_SendPackageToRxCallback
+                0x08011558       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011558                MIOS32_MIDI_SendPackageToRxCallback
  .text.MIOS32_MIDI_DebugPortSet
-                0x080115ac       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x080115ac                MIOS32_MIDI_DebugPortSet
+                0x080115a8       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080115a8                MIOS32_MIDI_DebugPortSet
  .text.MIOS32_MIDI_SYSEX_Cmd
-                0x080115c4      0x1b4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x080115c0      0x1b4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .text.MIOS32_MIDI_SYSEX_Parser
-                0x08011778       0xd8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011774       0xd8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .text.MIOS32_MIDI_ReceivePackage
-                0x08011850      0x22c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011850                MIOS32_MIDI_ReceivePackage
+                0x0801184c      0x22c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x0801184c                MIOS32_MIDI_ReceivePackage
  .text.MIOS32_MIDI_Receive_Handler
-                0x08011a7c      0x11c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08011a7c                MIOS32_MIDI_Receive_Handler
+                0x08011a78      0x11c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08011a78                MIOS32_MIDI_Receive_Handler
  .text.MIOS32_OSC_Init
-                0x08011b98        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_osc.o
-                0x08011b98                MIOS32_OSC_Init
+                0x08011b94        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_osc.o
+                0x08011b94                MIOS32_OSC_Init
  .text.MIOS32_UART_MIDI_RS_Reset
-                0x08011ba4       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011ba4                MIOS32_UART_MIDI_RS_Reset
+                0x08011ba0       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011ba0                MIOS32_UART_MIDI_RS_Reset
  .text.MIOS32_UART_MIDI_Init
-                0x08011bd4       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011bd4                MIOS32_UART_MIDI_Init
+                0x08011bd0       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011bd0                MIOS32_UART_MIDI_Init
  .text.MIOS32_UART_MIDI_Periodic_mS
-                0x08011c20       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011c20                MIOS32_UART_MIDI_Periodic_mS
+                0x08011c1c       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011c1c                MIOS32_UART_MIDI_Periodic_mS
  .text.MIOS32_UART_MIDI_PackageSend_NonBlocking
-                0x08011c70       0xb8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011c70                MIOS32_UART_MIDI_PackageSend_NonBlocking
+                0x08011c6c       0xb8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011c6c                MIOS32_UART_MIDI_PackageSend_NonBlocking
  .text.MIOS32_UART_MIDI_PackageSend
-                0x08011d28       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011d28                MIOS32_UART_MIDI_PackageSend
+                0x08011d24       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011d24                MIOS32_UART_MIDI_PackageSend
  .text.MIOS32_UART_MIDI_PackageReceive
-                0x08011d3c      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
-                0x08011d3c                MIOS32_UART_MIDI_PackageReceive
+                0x08011d38      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+                0x08011d38                MIOS32_UART_MIDI_PackageReceive
  .text.MIOS32_SPI_MIDI_Periodic_mS
-                0x08011eec        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_spi_midi.o
-                0x08011eec                MIOS32_SPI_MIDI_Periodic_mS
+                0x08011ee8        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_spi_midi.o
+                0x08011ee8                MIOS32_SPI_MIDI_Periodic_mS
  .text.MIOS32_IIC_MIDI_Init
-                0x08011ef0        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
-                0x08011ef0                MIOS32_IIC_MIDI_Init
+                0x08011eec        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
+                0x08011eec                MIOS32_IIC_MIDI_Init
  .text.MIOS32_IIC_MIDI_Periodic_mS
-                0x08011ef6        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
-                0x08011ef6                MIOS32_IIC_MIDI_Periodic_mS
+                0x08011ef2        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
+                0x08011ef2                MIOS32_IIC_MIDI_Periodic_mS
  .text.MIOS32_IIC_MIDI_PackageSend
-                0x08011efa        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
-                0x08011efa                MIOS32_IIC_MIDI_PackageSend
+                0x08011ef6        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
+                0x08011ef6                MIOS32_IIC_MIDI_PackageSend
  .text.MIOS32_TIMESTAMP_Init
-                0x08011f00       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
-                0x08011f00                MIOS32_TIMESTAMP_Init
+                0x08011efc       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
+                0x08011efc                MIOS32_TIMESTAMP_Init
  .text.MIOS32_TIMESTAMP_Inc
-                0x08011f14       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
-                0x08011f14                MIOS32_TIMESTAMP_Inc
+                0x08011f10       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
+                0x08011f10                MIOS32_TIMESTAMP_Inc
  .text.MIOS32_SYS_Reset
-                0x08011f24       0x84 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08011f24                MIOS32_SYS_Reset
+                0x08011f20       0x84 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011f20                MIOS32_SYS_Reset
  .text.MIOS32_SYS_ChipIDGet
-                0x08011fa8        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08011fa8                MIOS32_SYS_ChipIDGet
+                0x08011fa4        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011fa4                MIOS32_SYS_ChipIDGet
  .text.MIOS32_SYS_FlashSizeGet
-                0x08011fb4       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08011fb4                MIOS32_SYS_FlashSizeGet
+                0x08011fb0       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011fb0                MIOS32_SYS_FlashSizeGet
  .text.MIOS32_SYS_RAMSizeGet
-                0x08011fc4        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08011fc4                MIOS32_SYS_RAMSizeGet
- *fill*         0x08011fca        0x2 00
+                0x08011fc0        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011fc0                MIOS32_SYS_RAMSizeGet
+ *fill*         0x08011fc6        0x2 00
  .text.MIOS32_SYS_SerialNumberGet
-                0x08011fcc       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08011fcc                MIOS32_SYS_SerialNumberGet
+                0x08011fc8       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011fc8                MIOS32_SYS_SerialNumberGet
  .text.MIOS32_SYS_TimeSet
-                0x08012000       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x08012000                MIOS32_SYS_TimeSet
+                0x08011ffc       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08011ffc                MIOS32_SYS_TimeSet
  .text.MIOS32_SYS_Init
-                0x0801207c      0x130 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
-                0x0801207c                MIOS32_SYS_Init
+                0x08012078      0x130 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+                0x08012078                MIOS32_SYS_Init
  .text.MIOS32_IRQ_Disable
-                0x080121ac       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
-                0x080121ac                MIOS32_IRQ_Disable
+                0x080121a8       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
+                0x080121a8                MIOS32_IRQ_Disable
  .text.MIOS32_IRQ_Enable
-                0x080121d4       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
-                0x080121d4                MIOS32_IRQ_Enable
+                0x080121d0       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
+                0x080121d0                MIOS32_IRQ_Enable
  .text.MIOS32_IRQ_Install
-                0x080121fc       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
-                0x080121fc                MIOS32_IRQ_Install
+                0x080121f8       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
+                0x080121f8                MIOS32_IRQ_Install
  .text.MIOS32_BOARD_PinInitHlp
-                0x08012248       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x08012244       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
  .text.MIOS32_BOARD_Init
-                0x080122bc       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x080122bc                MIOS32_BOARD_Init
+                0x080122b8       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x080122b8                MIOS32_BOARD_Init
  .text.MIOS32_BOARD_LED_Init
-                0x080122d8       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x080122d8                MIOS32_BOARD_LED_Init
+                0x080122d4       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x080122d4                MIOS32_BOARD_LED_Init
  .text.MIOS32_BOARD_LED_Set
-                0x08012330       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x08012330                MIOS32_BOARD_LED_Set
+                0x0801232c       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x0801232c                MIOS32_BOARD_LED_Set
  .text.MIOS32_BOARD_LED_Get
-                0x08012394       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x08012394                MIOS32_BOARD_LED_Get
+                0x08012390       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x08012390                MIOS32_BOARD_LED_Get
  .text.MIOS32_BOARD_J10_PinInit
-                0x080123c0       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x080123c0                MIOS32_BOARD_J10_PinInit
+                0x080123bc       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x080123bc                MIOS32_BOARD_J10_PinInit
  .text.MIOS32_BOARD_J10_PinSet
-                0x08012408       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x08012408                MIOS32_BOARD_J10_PinSet
+                0x08012404       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x08012404                MIOS32_BOARD_J10_PinSet
  .text.MIOS32_BOARD_J10_Get
-                0x0801244c       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
-                0x0801244c                MIOS32_BOARD_J10_Get
+                0x08012448       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x08012448                MIOS32_BOARD_J10_Get
  .text.TIM2_IRQHandler
-                0x0801248c       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
-                0x0801248c                TIM2_IRQHandler
+                0x08012488       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
+                0x08012488                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x080124b0       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
-                0x080124b0                TIM3_IRQHandler
+                0x080124ac       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
+                0x080124ac                TIM3_IRQHandler
  .text.TIM5_IRQHandler
-                0x080124d4       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
-                0x080124d4                TIM5_IRQHandler
+                0x080124d0       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
+                0x080124d0                TIM5_IRQHandler
  .text.MIOS32_DELAY_Init
-                0x080124f8       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
-                0x080124f8                MIOS32_DELAY_Init
+                0x080124f4       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
+                0x080124f4                MIOS32_DELAY_Init
  .text.MIOS32_DELAY_Wait_uS
-                0x0801253c       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
-                0x0801253c                MIOS32_DELAY_Wait_uS
+                0x08012538       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
+                0x08012538                MIOS32_DELAY_Wait_uS
  .text.USBD_USR_DeviceDescriptor
-                0x08012554        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012550        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_LangIDStrDescriptor
-                0x08012560        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801255c        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_Init
-                0x0801256c        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012568        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceReset
-                0x0801256e        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801256a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceConnected
-                0x08012570        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801256c        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceSuspended
-                0x08012572        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801256e        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceResumed
-                0x08012574        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012570        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Init
-                0x08012576        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012572        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeviceAttached
-                0x08012578        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012574        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_UnrecoveredError
-                0x0801257a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012576        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_ResetDevice
-                0x0801257c        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012578        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeviceSpeedDetected
-                0x0801257e        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801257a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Device_DescAvailable
-                0x08012580        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801257c        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeviceAddressAssigned
-                0x08012582        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801257e        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Configuration_DescAvailable
-                0x08012584        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012580        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Manufacturer_String
-                0x08012586        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012582        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Product_String
-                0x08012588        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012584        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_SerialNum_String
-                0x0801258a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012586        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_EnumerationDone
-                0x0801258c        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012588        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeviceNotSupported
-                0x0801258e        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801258a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_UserInput
-                0x08012590        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801258c        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_OverCurrentDetected
-                0x08012594        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012590        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_Application
-                0x08012596        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012592        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeInit
-                0x0801259a        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012596        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_Setup
-                0x0801259c        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012598        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_EP0_RxReady
-                0x080125a0        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801259c        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_GetCfgDesc
-                0x080125a4        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080125a0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_SerialStrDescriptor
-                0x080125b0       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080125ac       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_ProductStrDescriptor
-                0x080125e8       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080125e4       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_InterfaceStrDescriptor
-                0x08012644        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012640        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_ConfigStrDescriptor
-                0x08012648        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012644        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_GetUsrStrDesc
-                0x0801264c        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
- *fill*         0x08012652        0x2 00
+                0x08012648        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+ *fill*         0x0801264e        0x2 00
  .text.USBD_USR_ManufacturerStrDescriptor
-                0x08012654       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012650       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_DataOut
-                0x08012680       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801267c       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_DataIn
-                0x08012692       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x0801268e       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_DeInit
-                0x080126a4       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126a0       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBH_USR_DeviceDisconnected
-                0x080126ba        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126b6        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceDisconnected
-                0x080126c0        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126bc        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USBD_USR_DeviceConfigured
-                0x080126c6        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126c2        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.MIOS32_USB_CLASS_Init
-                0x080126cc       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126c8       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .text.USB_OTG_BSP_Init
-                0x08012700       0x9c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x08012700                USB_OTG_BSP_Init
+                0x080126fc       0x9c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080126fc                USB_OTG_BSP_Init
  .text.USB_OTG_BSP_EnableInterrupt
-                0x0801279c        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x0801279c                USB_OTG_BSP_EnableInterrupt
+                0x08012798        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012798                USB_OTG_BSP_EnableInterrupt
  .text.OTG_FS_IRQHandler
-                0x080127a4       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x080127a4                OTG_FS_IRQHandler
+                0x080127a0       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080127a0                OTG_FS_IRQHandler
  .text.USB_OTG_BSP_uDelay
-                0x080127cc        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x080127cc                USB_OTG_BSP_uDelay
+                0x080127c8        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080127c8                USB_OTG_BSP_uDelay
  .text.USB_OTG_BSP_mDelay
-                0x080127d2        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x080127d2                USB_OTG_BSP_mDelay
- *fill*         0x080127de        0x2 00
+                0x080127ce        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080127ce                USB_OTG_BSP_mDelay
+ *fill*         0x080127da        0x2 00
  .text.USB_OTG_BSP_ConfigVBUS
-                0x080127e0       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x080127e0                USB_OTG_BSP_ConfigVBUS
+                0x080127dc       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x080127dc                USB_OTG_BSP_ConfigVBUS
  .text.USB_OTG_BSP_DriveVBUS
-                0x08012824       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x08012824                USB_OTG_BSP_DriveVBUS
+                0x08012820       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012820                USB_OTG_BSP_DriveVBUS
  .text.MIOS32_USB_IsInitialized
-                0x08012838        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x08012838                MIOS32_USB_IsInitialized
+                0x08012834        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012834                MIOS32_USB_IsInitialized
  .text.MIOS32_USB_ForceSingleUSB
-                0x08012844       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x08012844                MIOS32_USB_ForceSingleUSB
+                0x08012840       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012840                MIOS32_USB_ForceSingleUSB
  .text.MIOS32_USB_ForceDeviceMode
-                0x08012868       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x08012868                MIOS32_USB_ForceDeviceMode
+                0x08012864       0x24 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012864                MIOS32_USB_ForceDeviceMode
  .text.MIOS32_USB_Init
-                0x0801288c       0xec project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
-                0x0801288c                MIOS32_USB_Init
+                0x08012888       0xec project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08012888                MIOS32_USB_Init
  .text.USBH_ClassRequest
-                0x08012978        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012974        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.USBH_InterfaceDeInit
-                0x0801297c       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012978       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.MIOS32_USB_MIDI_RxBufferHandler
-                0x080129b8       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x080129b4       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.MIOS32_USB_MIDI_TxBufferHandler
-                0x08012a64       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012a60       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.USBH_Handle
-                0x08012b10      0x1f0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012b0c      0x1f0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.MIOS32_USB_MIDI_Init
-                0x08012d00        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012d00                MIOS32_USB_MIDI_Init
+                0x08012cfc        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012cfc                MIOS32_USB_MIDI_Init
  .text.MIOS32_USB_MIDI_ChangeConnectionState
-                0x08012d0c       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012d0c                MIOS32_USB_MIDI_ChangeConnectionState
+                0x08012d08       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012d08                MIOS32_USB_MIDI_ChangeConnectionState
  .text.MIOS32_USB_MIDI_CheckAvailable
-                0x08012d70       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012d70                MIOS32_USB_MIDI_CheckAvailable
+                0x08012d6c       0x20 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012d6c                MIOS32_USB_MIDI_CheckAvailable
  .text.USBH_InterfaceInit
-                0x08012d90      0x104 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012d8c      0x104 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
  .text.MIOS32_USB_MIDI_PackageSend_NonBlocking
-                0x08012e94       0x70 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012e94                MIOS32_USB_MIDI_PackageSend_NonBlocking
+                0x08012e90       0x70 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012e90                MIOS32_USB_MIDI_PackageSend_NonBlocking
  .text.MIOS32_USB_MIDI_PackageSend
-                0x08012f04       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012f04                MIOS32_USB_MIDI_PackageSend
+                0x08012f00       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012f00                MIOS32_USB_MIDI_PackageSend
  .text.MIOS32_USB_MIDI_PackageReceive
-                0x08012f34       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012f34                MIOS32_USB_MIDI_PackageReceive
+                0x08012f30       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012f30                MIOS32_USB_MIDI_PackageReceive
  .text.MIOS32_USB_MIDI_Periodic_mS
-                0x08012f88       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012f88                MIOS32_USB_MIDI_Periodic_mS
+                0x08012f84       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012f84                MIOS32_USB_MIDI_Periodic_mS
  .text.MIOS32_USB_MIDI_EP1_IN_Callback
-                0x08012fb0       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012fb0                MIOS32_USB_MIDI_EP1_IN_Callback
+                0x08012fac       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012fac                MIOS32_USB_MIDI_EP1_IN_Callback
  .text.MIOS32_USB_MIDI_EP2_OUT_Callback
-                0x08012fc0       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08012fc0                MIOS32_USB_MIDI_EP2_OUT_Callback
+                0x08012fbc       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08012fbc                MIOS32_USB_MIDI_EP2_OUT_Callback
  .text.MIOS32_UART_BaudrateSet
-                0x08012fd0       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x08012fd0                MIOS32_UART_BaudrateSet
+                0x08012fcc       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08012fcc                MIOS32_UART_BaudrateSet
  .text.MIOS32_UART_Init
-                0x08013028      0x140 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x08013028                MIOS32_UART_Init
+                0x08013024      0x140 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013024                MIOS32_UART_Init
  .text.MIOS32_UART_RxBufferGet
-                0x08013168       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x08013168                MIOS32_UART_RxBufferGet
+                0x08013164       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013164                MIOS32_UART_RxBufferGet
  .text.MIOS32_UART_RxBufferPut
-                0x080131c0       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x080131c0                MIOS32_UART_RxBufferPut
+                0x080131bc       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x080131bc                MIOS32_UART_RxBufferPut
  .text.MIOS32_UART_TxBufferGet
-                0x0801321c       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x0801321c                MIOS32_UART_TxBufferGet
+                0x08013218       0x58 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013218                MIOS32_UART_TxBufferGet
  .text.MIOS32_UART_TxBufferPutMore_NonBlocking
-                0x08013274       0x90 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x08013274                MIOS32_UART_TxBufferPutMore_NonBlocking
+                0x08013270       0x90 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013270                MIOS32_UART_TxBufferPutMore_NonBlocking
  .text.MIOS32_UART_TxBufferPutMore
-                0x08013304       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x08013304                MIOS32_UART_TxBufferPutMore
+                0x08013300       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013300                MIOS32_UART_TxBufferPutMore
  .text.USART2_IRQHandler
-                0x0801331c       0x60 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x0801331c                USART2_IRQHandler
+                0x08013318       0x60 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013318                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x0801337c       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
-                0x0801337c                USART3_IRQHandler
+                0x08013378       0x64 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+                0x08013378                USART3_IRQHandler
  .text.EV_IRQHandler
-                0x080133e0      0x162 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
- *fill*         0x08013542        0x2 00
+                0x080133dc      0x162 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+ *fill*         0x0801353e        0x2 00
  .text.ER_IRQHandler
-                0x08013544       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+                0x08013540       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
  .text.I2C2_EV_IRQHandler
-                0x080135c0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
-                0x080135c0                I2C2_EV_IRQHandler
+                0x080135bc        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+                0x080135bc                I2C2_EV_IRQHandler
  .text.I2C2_ER_IRQHandler
-                0x080135cc        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
-                0x080135cc                I2C2_ER_IRQHandler
+                0x080135c8        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+                0x080135c8                I2C2_ER_IRQHandler
  .text.I2C1_EV_IRQHandler
-                0x080135d8        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
-                0x080135d8                I2C1_EV_IRQHandler
+                0x080135d4        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+                0x080135d4                I2C1_EV_IRQHandler
  .text.I2C1_ER_IRQHandler
-                0x080135e4        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
-                0x080135e4                I2C1_ER_IRQHandler
+                0x080135e0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+                0x080135e0                I2C1_ER_IRQHandler
  .text.printchar
-                0x080135f0        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .text.prints   0x080135fe       0x82 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .text.printi   0x08013680       0x98 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .text.print    0x08013718      0x120 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .text.sprintf  0x08013838       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
-                0x08013838                sprintf
+                0x080135ec        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .text.prints   0x080135fa       0x82 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .text.printi   0x0801367c       0x98 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .text.print    0x08013714      0x120 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .text.sprintf  0x08013834       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+                0x08013834                sprintf
  .text.vsprintf
-                0x08013856       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
-                0x08013856                vsprintf
- *fill*         0x08013866        0x2 00
+                0x08013852       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+                0x08013852                vsprintf
+ *fill*         0x08013862        0x2 00
  .text.NVIC_PriorityGroupConfig
-                0x08013868       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
-                0x08013868                NVIC_PriorityGroupConfig
+                0x08013864       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x08013864                NVIC_PriorityGroupConfig
  .text.NVIC_SetVectorTable
-                0x0801387c       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
-                0x0801387c                NVIC_SetVectorTable
+                0x08013878       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x08013878                NVIC_SetVectorTable
  .text.EXTI_ClearITPendingBit
-                0x08013890        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
-                0x08013890                EXTI_ClearITPendingBit
+                0x0801388c        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+                0x0801388c                EXTI_ClearITPendingBit
  .text.GPIO_Init
-                0x0801389c       0x9a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x0801389c                GPIO_Init
+                0x08013898       0x9a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08013898                GPIO_Init
  .text.GPIO_StructInit
-                0x08013936       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08013936                GPIO_StructInit
+                0x08013932       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08013932                GPIO_StructInit
  .text.GPIO_SetBits
-                0x08013948        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08013948                GPIO_SetBits
+                0x08013944        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08013944                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x0801394c        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x0801394c                GPIO_ResetBits
+                0x08013948        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08013948                GPIO_ResetBits
  .text.GPIO_PinAFConfig
-                0x08013950       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08013950                GPIO_PinAFConfig
+                0x0801394c       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x0801394c                GPIO_PinAFConfig
  .text.I2C_GenerateSTOP
-                0x0801397e       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
-                0x0801397e                I2C_GenerateSTOP
+                0x0801397a       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+                0x0801397a                I2C_GenerateSTOP
  .text.I2C_ITConfig
-                0x08013996       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
-                0x08013996                I2C_ITConfig
+                0x08013992       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+                0x08013992                I2C_ITConfig
  .text.I2C_GetLastEvent
-                0x080139a8       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
-                0x080139a8                I2C_GetLastEvent
+                0x080139a4       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+                0x080139a4                I2C_GetLastEvent
  .text.I2C_ClearITPendingBit
-                0x080139b8        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
-                0x080139b8                I2C_ClearITPendingBit
+                0x080139b4        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+                0x080139b4                I2C_ClearITPendingBit
  .text.PWR_BackupAccessCmd
-                0x080139c0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
-                0x080139c0                PWR_BackupAccessCmd
+                0x080139bc        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
+                0x080139bc                PWR_BackupAccessCmd
  .text.RCC_GetClocksFreq
-                0x080139cc       0x8c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x080139cc                RCC_GetClocksFreq
+                0x080139c8       0x8c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x080139c8                RCC_GetClocksFreq
  .text.RCC_RTCCLKConfig
-                0x08013a58       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013a58                RCC_RTCCLKConfig
+                0x08013a54       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013a54                RCC_RTCCLKConfig
  .text.RCC_RTCCLKCmd
-                0x08013a88        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013a88                RCC_RTCCLKCmd
+                0x08013a84        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013a84                RCC_RTCCLKCmd
  .text.RCC_AHB1PeriphClockCmd
-                0x08013a94       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013a94                RCC_AHB1PeriphClockCmd
+                0x08013a90       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013a90                RCC_AHB1PeriphClockCmd
  .text.RCC_AHB2PeriphClockCmd
-                0x08013aac       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013aac                RCC_AHB2PeriphClockCmd
+                0x08013aa8       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013aa8                RCC_AHB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x08013ac4       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013ac4                RCC_APB1PeriphClockCmd
+                0x08013ac0       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013ac0                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x08013adc       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013adc                RCC_APB2PeriphClockCmd
+                0x08013ad8       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013ad8                RCC_APB2PeriphClockCmd
  .text.RCC_AHB1PeriphResetCmd
-                0x08013af4       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013af4                RCC_AHB1PeriphResetCmd
+                0x08013af0       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013af0                RCC_AHB1PeriphResetCmd
  .text.RCC_AHB2PeriphResetCmd
-                0x08013b0c       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013b0c                RCC_AHB2PeriphResetCmd
+                0x08013b08       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013b08                RCC_AHB2PeriphResetCmd
  .text.RCC_APB1PeriphResetCmd
-                0x08013b24       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013b24                RCC_APB1PeriphResetCmd
+                0x08013b20       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013b20                RCC_APB1PeriphResetCmd
  .text.RCC_APB2PeriphResetCmd
-                0x08013b3c       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08013b3c                RCC_APB2PeriphResetCmd
+                0x08013b38       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08013b38                RCC_APB2PeriphResetCmd
  .text.RTC_ByteToBcd2
-                0x08013b54       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013b50       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .text.RTC_StructInit
-                0x08013b6c        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013b6c                RTC_StructInit
+                0x08013b68        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013b68                RTC_StructInit
  .text.RTC_EnterInitMode
-                0x08013b78       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013b78                RTC_EnterInitMode
+                0x08013b74       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013b74                RTC_EnterInitMode
  .text.RTC_ExitInitMode
-                0x08013bb8       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013bb8                RTC_ExitInitMode
+                0x08013bb4       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013bb4                RTC_ExitInitMode
  .text.RTC_Init
-                0x08013bc8       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013bc8                RTC_Init
+                0x08013bc4       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013bc4                RTC_Init
  .text.RTC_WaitForSynchro
-                0x08013c10       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013c10                RTC_WaitForSynchro
+                0x08013c0c       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013c0c                RTC_WaitForSynchro
  .text.RTC_SetTime
-                0x08013c54       0x8c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013c54                RTC_SetTime
+                0x08013c50       0x8c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013c50                RTC_SetTime
  .text.RTC_TimeStructInit
-                0x08013ce0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
-                0x08013ce0                RTC_TimeStructInit
+                0x08013cdc        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08013cdc                RTC_TimeStructInit
  .text.TIM_TimeBaseInit
-                0x08013cec       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08013cec                TIM_TimeBaseInit
- .text.TIM_Cmd  0x08013d68       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08013d68                TIM_Cmd
+                0x08013ce8       0x7c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08013ce8                TIM_TimeBaseInit
+ .text.TIM_Cmd  0x08013d64       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08013d64                TIM_Cmd
  .text.TIM_GetITStatus
-                0x08013d80       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08013d80                TIM_GetITStatus
+                0x08013d7c       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08013d7c                TIM_GetITStatus
  .text.TIM_ClearITPendingBit
-                0x08013d96        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08013d96                TIM_ClearITPendingBit
- *fill*         0x08013d9e        0x2 00
+                0x08013d92        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08013d92                TIM_ClearITPendingBit
+ *fill*         0x08013d9a        0x2 00
  .text.USART_Init
-                0x08013da0       0xb8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x08013da0                USART_Init
+                0x08013d9c       0xb8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                0x08013d9c                USART_Init
  .text.USART_Cmd
-                0x08013e58       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x08013e58                USART_Cmd
+                0x08013e54       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                0x08013e54                USART_Cmd
  .text.USART_ITConfig
-                0x08013e70       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x08013e70                USART_ITConfig
+                0x08013e6c       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                0x08013e6c                USART_ITConfig
  .text.USBD_Resume
-                0x08013ea4       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013ea0       0x16 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Suspend
-                0x08013eba       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013eb6       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_SOF
-                0x08013ed6       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013ed2       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_IsoINIncomplete
-                0x08013ee6        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013ee2        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_IsoOUTIncomplete
-                0x08013ef4        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013ef0        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Reset
-                0x08013f02       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013efe       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_SetupStage
-                0x08013f30       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013f2c       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_DataInStage
-                0x08013f78       0xb4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08013f74       0xb4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_DataOutStage
-                0x0801402c       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08014028       0x74 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Init
-                0x080140a0       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x080140a0                USBD_Init
+                0x0801409c       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x0801409c                USBD_Init
  .text.USBD_SetCfg
-                0x080140d8       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x080140d8                USBD_SetCfg
+                0x080140d4       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x080140d4                USBD_SetCfg
  .text.USBD_ClrCfg
-                0x080140f0        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x080140f0                USBD_ClrCfg
+                0x080140ec        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x080140ec                USBD_ClrCfg
  .text.USBD_CtlSendData
-                0x080140fe       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x080140fe                USBD_CtlSendData
+                0x080140fa       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x080140fa                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x08014120       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08014120                USBD_CtlContinueSendData
+                0x0801411c       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x0801411c                USBD_CtlContinueSendData
  .text.USBD_CtlContinueRx
-                0x08014132       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08014132                USBD_CtlContinueRx
+                0x0801412e       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x0801412e                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x08014144       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08014144                USBD_CtlSendStatus
+                0x08014140       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x08014140                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x08014162       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08014162                USBD_CtlReceiveStatus
+                0x0801415e       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x0801415e                USBD_CtlReceiveStatus
  .text.USBD_ParseSetupRequest
-                0x08014180       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08014180                USBD_ParseSetupRequest
+                0x0801417c       0x44 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x0801417c                USBD_ParseSetupRequest
  .text.USBD_CtlError
-                0x080141c4       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080141c4                USBD_CtlError
+                0x080141c0       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080141c0                USBD_CtlError
  .text.USBD_StdEPReq
-                0x080141e0       0xc4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080141e0                USBD_StdEPReq
+                0x080141dc       0xc4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080141dc                USBD_StdEPReq
  .text.USBD_StdItfReq
-                0x080142a4       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080142a4                USBD_StdItfReq
+                0x080142a0       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080142a0                USBD_StdItfReq
  .text.USBD_StdDevReq
-                0x080142d4      0x2ac project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080142d4                USBD_StdDevReq
+                0x080142d0      0x2ac project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080142d0                USBD_StdDevReq
  .text.USBD_GetString
-                0x08014580       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08014580                USBD_GetString
+                0x0801457c       0x38 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x0801457c                USBD_GetString
  .text.USBH_Connected
-                0x080145b8        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x080145b8                USBH_Connected
+                0x080145b4        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080145b4                USBH_Connected
  .text.USBH_Disconnected
-                0x080145c2        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x080145c2                USBH_Disconnected
+                0x080145be        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080145be                USBH_Disconnected
  .text.USBH_SOF
-                0x080145cc        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x080145cc                USBH_SOF
+                0x080145c8        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080145c8                USBH_SOF
  .text.USBH_DeInit
-                0x080145d0       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x080145d0                USBH_DeInit
+                0x080145cc       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080145cc                USBH_DeInit
  .text.USBH_Init
-                0x08014602       0x42 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x08014602                USBH_Init
+                0x080145fe       0x42 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080145fe                USBH_Init
  .text.USBH_ErrorHandle
-                0x08014644       0x2a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x08014644                USBH_ErrorHandle
- *fill*         0x0801466e        0x2 00
+                0x08014640       0x2a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x08014640                USBH_ErrorHandle
+ *fill*         0x0801466a        0x2 00
  .text.USBH_HandleControl
-                0x08014670      0x1b8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x08014670                USBH_HandleControl
+                0x0801466c      0x1b8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x0801466c                USBH_HandleControl
  .text.USBH_Process
-                0x08014828      0x344 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
-                0x08014828                USBH_Process
+                0x08014824      0x344 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x08014824                USBH_Process
  .text.USBH_Open_Channel
-                0x08014b6c       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
-                0x08014b6c                USBH_Open_Channel
+                0x08014b68       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+                0x08014b68                USBH_Open_Channel
  .text.USBH_Modify_Channel
-                0x08014bc0       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
-                0x08014bc0                USBH_Modify_Channel
+                0x08014bbc       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+                0x08014bbc                USBH_Modify_Channel
  .text.USBH_Alloc_Channel
-                0x08014bfa       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
-                0x08014bfa                USBH_Alloc_Channel
+                0x08014bf6       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+                0x08014bf6                USBH_Alloc_Channel
  .text.USBH_Free_Channel
-                0x08014c2c       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
-                0x08014c2c                USBH_Free_Channel
+                0x08014c28       0x18 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+                0x08014c28                USBH_Free_Channel
  .text.USBH_DeAllocate_AllChannel
-                0x08014c44       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
-                0x08014c44                USBH_DeAllocate_AllChannel
+                0x08014c40       0x1e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+                0x08014c40                USBH_DeAllocate_AllChannel
  .text.USBH_CtlReq
-                0x08014c62       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014c62                USBH_CtlReq
+                0x08014c5e       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014c5e                USBH_CtlReq
  .text.USBH_CtlSendSetup
-                0x08014caa       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014caa                USBH_CtlSendSetup
+                0x08014ca6       0x2e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014ca6                USBH_CtlSendSetup
  .text.USBH_CtlSendData
-                0x08014cd8       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014cd8                USBH_CtlSendData
+                0x08014cd4       0x40 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014cd4                USBH_CtlSendData
  .text.USBH_CtlReceiveData
-                0x08014d18       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014d18                USBH_CtlReceiveData
+                0x08014d14       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014d14                USBH_CtlReceiveData
  .text.USBH_BulkSendData
-                0x08014d44       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014d44                USBH_BulkSendData
+                0x08014d40       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014d40                USBH_BulkSendData
  .text.USBH_BulkReceiveData
-                0x08014d78       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
-                0x08014d78                USBH_BulkReceiveData
+                0x08014d74       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+                0x08014d74                USBH_BulkReceiveData
  .text.USBH_GetDescriptor
-                0x08014dac       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x08014dac                USBH_GetDescriptor
+                0x08014da8       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x08014da8                USBH_GetDescriptor
  .text.USBH_Get_StringDesc
-                0x08014de0       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x08014de0                USBH_Get_StringDesc
+                0x08014ddc       0x50 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x08014ddc                USBH_Get_StringDesc
  .text.USBH_Get_DevDesc
-                0x08014e30       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x08014e30                USBH_Get_DevDesc
+                0x08014e2c       0xac project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x08014e2c                USBH_Get_DevDesc
  .text.USBH_Get_CfgDesc
-                0x08014edc      0x1dc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x08014edc                USBH_Get_CfgDesc
+                0x08014ed8      0x1dc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x08014ed8                USBH_Get_CfgDesc
  .text.USBH_SetAddress
-                0x080150b8       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x080150b8                USBH_SetAddress
+                0x080150b4       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x080150b4                USBH_SetAddress
  .text.USBH_SetCfg
-                0x080150d4       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x080150d4                USBH_SetCfg
+                0x080150d0       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x080150d0                USBH_SetCfg
  .text.USBH_ClrFeature
-                0x080150f0       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
-                0x080150f0                USBH_ClrFeature
- *fill*         0x08015122        0x2 00
+                0x080150ec       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+                0x080150ec                USBH_ClrFeature
+ *fill*         0x0801511e        0x2 00
  .text.USB_OTG_EnableCommonInt
-                0x08015124       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015120       0x14 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
  .text.USB_OTG_CoreReset
-                0x08015138       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015134       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
  .text.USB_OTG_WritePacket
-                0x08015184       0x26 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015184                USB_OTG_WritePacket
+                0x08015180       0x26 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015180                USB_OTG_WritePacket
  .text.USB_OTG_ReadPacket
-                0x080151aa       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080151aa                USB_OTG_ReadPacket
+                0x080151a6       0x22 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080151a6                USB_OTG_ReadPacket
  .text.USB_OTG_SelectCore
-                0x080151cc       0xc0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080151cc                USB_OTG_SelectCore
+                0x080151c8       0xc0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080151c8                USB_OTG_SelectCore
  .text.USB_OTG_CoreInit
-                0x0801528c       0x9a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0801528c                USB_OTG_CoreInit
+                0x08015288       0x9a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015288                USB_OTG_CoreInit
  .text.USB_OTG_EnableGlobalInt
-                0x08015326        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015326                USB_OTG_EnableGlobalInt
+                0x08015322        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015322                USB_OTG_EnableGlobalInt
  .text.USB_OTG_DisableGlobalInt
-                0x08015334        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015334                USB_OTG_DisableGlobalInt
- *fill*         0x08015342        0x2 00
+                0x08015330        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015330                USB_OTG_DisableGlobalInt
+ *fill*         0x0801533e        0x2 00
  .text.USB_OTG_FlushTxFifo
-                0x08015344       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015344                USB_OTG_FlushTxFifo
+                0x08015340       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015340                USB_OTG_FlushTxFifo
  .text.USB_OTG_FlushRxFifo
-                0x08015380       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015380                USB_OTG_FlushRxFifo
+                0x0801537c       0x34 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801537c                USB_OTG_FlushRxFifo
  .text.USB_OTG_SetCurrentMode
-                0x080153b4       0x2a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080153b4                USB_OTG_SetCurrentMode
+                0x080153b0       0x2a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080153b0                USB_OTG_SetCurrentMode
  .text.USB_OTG_IsDeviceMode
-                0x080153de        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080153de                USB_OTG_IsDeviceMode
+                0x080153da        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080153da                USB_OTG_IsDeviceMode
  .text.USB_OTG_IsHostMode
-                0x080153ec        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080153ec                USB_OTG_IsHostMode
+                0x080153e8        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080153e8                USB_OTG_IsHostMode
  .text.USB_OTG_ReadCoreItr
-                0x080153f6        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080153f6                USB_OTG_ReadCoreItr
+                0x080153f2        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080153f2                USB_OTG_ReadCoreItr
  .text.USB_OTG_IsEvenFrame
-                0x08015400        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015400                USB_OTG_IsEvenFrame
+                0x080153fc        0xe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080153fc                USB_OTG_IsEvenFrame
  .text.USB_OTG_EnableHostInt
-                0x0801540e       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0801540e                USB_OTG_EnableHostInt
+                0x0801540a       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801540a                USB_OTG_EnableHostInt
  .text.USB_OTG_InitFSLSPClkSel
-                0x0801544a        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0801544a                USB_OTG_InitFSLSPClkSel
+                0x08015446        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015446                USB_OTG_InitFSLSPClkSel
  .text.USB_OTG_ReadHPRT0
-                0x08015456        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015456                USB_OTG_ReadHPRT0
+                0x08015452        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015452                USB_OTG_ReadHPRT0
  .text.USB_OTG_DriveVbus
-                0x08015462       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015462                USB_OTG_DriveVbus
+                0x0801545e       0x4c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801545e                USB_OTG_DriveVbus
  .text.USB_OTG_ReadHostAllChannels_intr
-                0x080154ae        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080154ae                USB_OTG_ReadHostAllChannels_intr
+                0x080154aa        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080154aa                USB_OTG_ReadHostAllChannels_intr
  .text.USB_OTG_ResetPort
-                0x080154b4       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080154b4                USB_OTG_ResetPort
+                0x080154b0       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080154b0                USB_OTG_ResetPort
  .text.USB_OTG_CoreInitHost
-                0x080154e0       0x98 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080154e0                USB_OTG_CoreInitHost
+                0x080154dc       0x98 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080154dc                USB_OTG_CoreInitHost
  .text.USB_OTG_HC_Init
-                0x08015578       0xe8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015578                USB_OTG_HC_Init
+                0x08015574       0xe8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015574                USB_OTG_HC_Init
  .text.USB_OTG_HC_StartXfer
-                0x08015660      0x114 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015660                USB_OTG_HC_StartXfer
+                0x0801565c      0x114 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801565c                USB_OTG_HC_StartXfer
  .text.USB_OTG_HC_Halt
-                0x08015774       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015774                USB_OTG_HC_Halt
+                0x08015770       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015770                USB_OTG_HC_Halt
  .text.USB_OTG_HC_DoPing
-                0x080157ae       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080157ae                USB_OTG_HC_DoPing
+                0x080157aa       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080157aa                USB_OTG_HC_DoPing
  .text.USB_OTG_InitDevSpeed
-                0x080157d6        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080157d6                USB_OTG_InitDevSpeed
+                0x080157d2        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080157d2                USB_OTG_InitDevSpeed
  .text.USB_OTG_EnableDevInt
-                0x080157e2       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080157e2                USB_OTG_EnableDevInt
- *fill*         0x0801581e        0x2 00
+                0x080157de       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080157de                USB_OTG_EnableDevInt
+ *fill*         0x0801581a        0x2 00
  .text.USB_OTG_CoreInitDev
-                0x08015820      0x100 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015820                USB_OTG_CoreInitDev
+                0x0801581c      0x100 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801581c                USB_OTG_CoreInitDev
  .text.USB_OTG_GetDeviceSpeed
-                0x08015920       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015920                USB_OTG_GetDeviceSpeed
+                0x0801591c       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0801591c                USB_OTG_GetDeviceSpeed
  .text.USB_OTG_EP0Activate
-                0x0801593c       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0801593c                USB_OTG_EP0Activate
+                0x08015938       0x2c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015938                USB_OTG_EP0Activate
  .text.USB_OTG_EPActivate
-                0x08015968       0x5e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015968                USB_OTG_EPActivate
+                0x08015964       0x5e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015964                USB_OTG_EPActivate
  .text.USB_OTG_EPDeactivate
-                0x080159c6       0x3e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080159c6                USB_OTG_EPDeactivate
+                0x080159c2       0x3e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080159c2                USB_OTG_EPDeactivate
  .text.USB_OTG_EPStartXfer
-                0x08015a04      0x10a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015a04                USB_OTG_EPStartXfer
+                0x08015a00      0x10a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015a00                USB_OTG_EPStartXfer
  .text.USB_OTG_EP0StartXfer
-                0x08015b0e       0xda project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015b0e                USB_OTG_EP0StartXfer
+                0x08015b0a       0xda project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015b0a                USB_OTG_EP0StartXfer
  .text.USB_OTG_EPSetStall
-                0x08015be8       0x36 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015be8                USB_OTG_EPSetStall
+                0x08015be4       0x36 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015be4                USB_OTG_EPSetStall
  .text.USB_OTG_EPClearStall
-                0x08015c1e       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015c1e                USB_OTG_EPClearStall
+                0x08015c1a       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015c1a                USB_OTG_EPClearStall
  .text.USB_OTG_ReadDevAllOutEp_itr
-                0x08015c46        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015c46                USB_OTG_ReadDevAllOutEp_itr
+                0x08015c42        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015c42                USB_OTG_ReadDevAllOutEp_itr
  .text.USB_OTG_ReadDevOutEP_itr
-                0x08015c52       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015c52                USB_OTG_ReadDevOutEP_itr
+                0x08015c4e       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015c4e                USB_OTG_ReadDevOutEP_itr
  .text.USB_OTG_ReadDevAllInEPItr
-                0x08015c62        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015c62                USB_OTG_ReadDevAllInEPItr
+                0x08015c5e        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015c5e                USB_OTG_ReadDevAllInEPItr
  .text.USB_OTG_EP0_OutStart
-                0x08015c6e       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08015c6e                USB_OTG_EP0_OutStart
+                0x08015c6a       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08015c6a                USB_OTG_EP0_OutStart
  .text.DCD_Init
-                0x08015caa       0x96 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015caa                DCD_Init
+                0x08015ca6       0x96 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015ca6                DCD_Init
  .text.DCD_EP_Open
-                0x08015d40       0x42 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015d40                DCD_EP_Open
+                0x08015d3c       0x42 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015d3c                DCD_EP_Open
  .text.DCD_EP_Close
-                0x08015d82       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015d82                DCD_EP_Close
+                0x08015d7e       0x32 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015d7e                DCD_EP_Close
  .text.DCD_EP_PrepareRx
-                0x08015db4       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015db4                DCD_EP_PrepareRx
+                0x08015db0       0x3a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015db0                DCD_EP_PrepareRx
  .text.DCD_EP_Tx
-                0x08015dee       0x36 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015dee                DCD_EP_Tx
+                0x08015dea       0x36 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015dea                DCD_EP_Tx
  .text.DCD_EP_Stall
-                0x08015e24       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015e24                DCD_EP_Stall
+                0x08015e20       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015e20                DCD_EP_Stall
  .text.DCD_EP_ClrStall
-                0x08015e60       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015e60                DCD_EP_ClrStall
+                0x08015e5c       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015e5c                DCD_EP_ClrStall
  .text.DCD_EP_SetAddress
-                0x08015e9c       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015e9c                DCD_EP_SetAddress
+                0x08015e98       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015e98                DCD_EP_SetAddress
  .text.DCD_DevConnect
-                0x08015eac        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015eac                DCD_DevConnect
+                0x08015ea8        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015ea8                DCD_DevConnect
  .text.DCD_DevDisconnect
-                0x08015eae        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08015eae                DCD_DevDisconnect
+                0x08015eaa        0x2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08015eaa                DCD_DevDisconnect
  .text.USBD_OTG_ISR_Handler
-                0x08015eb0      0x498 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd_int.o
-                0x08015eb0                USBD_OTG_ISR_Handler
+                0x08015eac      0x498 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08015eac                USBD_OTG_ISR_Handler
  .text.HCD_Init
-                0x08016348       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x08016348                HCD_Init
+                0x08016344       0x5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x08016344                HCD_Init
  .text.HCD_GetCurrentSpeed
-                0x080163a4        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163a4                HCD_GetCurrentSpeed
+                0x080163a0        0xc project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163a0                HCD_GetCurrentSpeed
  .text.HCD_ResetPort
-                0x080163b0        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163b0                HCD_ResetPort
+                0x080163ac        0xa project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163ac                HCD_ResetPort
  .text.HCD_IsDeviceConnected
-                0x080163ba        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163ba                HCD_IsDeviceConnected
+                0x080163b6        0x6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163b6                HCD_IsDeviceConnected
  .text.HCD_GetCurrentFrame
-                0x080163c0        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163c0                HCD_GetCurrentFrame
+                0x080163bc        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163bc                HCD_GetCurrentFrame
  .text.HCD_GetURB_State
-                0x080163c8        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163c8                HCD_GetURB_State
+                0x080163c4        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163c4                HCD_GetURB_State
  .text.HCD_SubmitRequest
-                0x080163d0       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
-                0x080163d0                HCD_SubmitRequest
- *fill*         0x080163ea        0x2 00
+                0x080163cc       0x1a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+                0x080163cc                HCD_SubmitRequest
+ *fill*         0x080163e6        0x2 00
  .text.USB_OTG_USBH_handle_sof_ISR
-                0x080163ec       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x080163e8       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_Disconnect_ISR
-                0x08016428       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08016424       0x3c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_nptxfempty_ISR
-                0x08016464      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08016460      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_ptxfempty_ISR
-                0x08016614      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08016610      0x1b0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_port_ISR
-                0x080167c4      0x184 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x080167c0      0x184 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_hc_n_Out_ISR
-                0x08016948      0x5c0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08016944      0x5c0 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_hc_n_In_ISR
-                0x08016f08      0x610 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08016f04      0x610 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_hc_ISR
-                0x08017518       0x9c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08017514       0x9c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_rx_qlvl_ISR
-                0x080175b4      0x1c8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x080175b0      0x1c8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USB_OTG_USBH_handle_IncompletePeriodicXfer_ISR
-                0x0801777c       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x08017778       0x54 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .text.USBH_OTG_ISR_Handler
-                0x080177d0      0x114 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
-                0x080177d0                USBH_OTG_ISR_Handler
+                0x080177cc      0x114 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+                0x080177cc                USBH_OTG_ISR_Handler
  .text.STM32_USBO_OTG_ISR_Handler
-                0x080178e4      0x120 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_otg.o
-                0x080178e4                STM32_USBO_OTG_ISR_Handler
+                0x080178e0      0x120 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_otg.o
+                0x080178e0                STM32_USBO_OTG_ISR_Handler
  .text.__libc_init_array
-                0x08017a04       0x4c /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-init.o)
-                0x08017a04                __libc_init_array
- .text.memcpy   0x08017a50       0x12 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-memcpy.o)
-                0x08017a50                memcpy
- .text.memset   0x08017a62       0x10 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-memset.o)
-                0x08017a62                memset
- .text.strlen   0x08017a72       0x10 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-strlen.o)
-                0x08017a72                strlen
- .text.strncpy  0x08017a82       0x2a /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-strncpy.o)
-                0x08017a82                strncpy
+                0x08017a00       0x4c /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-init.o)
+                0x08017a00                __libc_init_array
+ .text.memcpy   0x08017a4c       0x12 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-memcpy.o)
+                0x08017a4c                memcpy
+ .text.memset   0x08017a5e       0x10 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-memset.o)
+                0x08017a5e                memset
+ .text.strlen   0x08017a6e       0x10 /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-strlen.o)
+                0x08017a6e                strlen
+ .text.strncpy  0x08017a7e       0x2a /home/karshan/gits/vaayu/software/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a(lib_a-strncpy.o)
+                0x08017a7e                strncpy
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -3985,10 +3985,10 @@ END GROUP
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x08017aac        0x0
+.v4_bx          0x08017aa8        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08017aac        0x0
+.iplt           0x08017aa8        0x0
  .iplt          0x00000000        0x0 project_build/app.o
 
 .eh_frame_hdr
@@ -3996,126 +3996,125 @@ END GROUP
 
 .eh_frame
  *(.eh_frame)
-                0x08017aac                __exidx_start = .
+                0x08017aa8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08017aac                __exidx_end = .
+                0x08017aa8                __exidx_end = .
 
-.rodata         0x08017aac      0x65c
+.rodata         0x08017aa8      0x658
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x08017aac        0xb project_build/app.o
+ .rodata        0x08017aa8        0xb project_build/app.o
  .rodata.str1.1
-                0x08017ab7       0x1e project_build/app.o
+                0x08017ab3       0x1e project_build/app.o
  .rodata.str1.1
-                0x08017ad5      0x104 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+                0x08017ad1      0x104 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
                                 0x115 (size before relaxing)
  .rodata.str1.1
-                0x08017bd9        0x5 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+                0x08017bd5        0x5 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
  .rodata.str1.1
-                0x08017bde      0x147 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
- *fill*         0x08017d25        0x3 00
- .rodata        0x08017d28       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017bda      0x147 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+ *fill*         0x08017d21        0x3 00
+ .rodata        0x08017d24       0x28 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .rodata.mios32_midi_expected_bytes_system
-                0x08017d50       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08017d50                mios32_midi_expected_bytes_system
+                0x08017d4c       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017d4c                mios32_midi_expected_bytes_system
  .rodata.mios32_midi_pcktype_num_bytes
-                0x08017d60       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08017d60                mios32_midi_pcktype_num_bytes
+                0x08017d5c       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017d5c                mios32_midi_pcktype_num_bytes
  .rodata.str1.1
-                0x08017d70      0x131 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017d6c      0x131 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
  .rodata.mios32_midi_expected_bytes_common
-                0x08017ea1        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08017ea1                mios32_midi_expected_bytes_common
+                0x08017e9d        0x8 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017e9d                mios32_midi_expected_bytes_common
  .rodata.mios32_midi_sysex_header
-                0x08017ea9        0x5 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
-                0x08017ea9                mios32_midi_sysex_header
+                0x08017ea5        0x5 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+                0x08017ea5                mios32_midi_sysex_header
  .rodata.CSWTCH.23
-                0x08017eae        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
- *fill*         0x08017eb1        0x3 00
+                0x08017eaa        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+ *fill*         0x08017ead        0x3 00
  .rodata.j10_pin
-                0x08017eb4       0x80 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+                0x08017eb0       0x80 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
  .rodata.USBH_USR_Callbacks
-                0x08017f34       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017f30       0x48 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.MIOS32_USB_CLASS_cb
-                0x08017f7c       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017f78       0x30 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.USBD_LangIDDesc
-                0x08017fac        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017fa8        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.MIOS32_USB_DeviceDescriptor
-                0x08017fb0       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
- *fill*         0x08017fc2        0x2 00
+                0x08017fac       0x12 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+ *fill*         0x08017fbe        0x2 00
  .rodata.USR_desc
-                0x08017fc4       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017fc0       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.str1.1
-                0x08017fe0        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017fdc        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
                                  0x16 (size before relaxing)
  .rodata.MIOS32_USB_ConfigDescriptor
-                0x08017fe3       0x65 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08017fdf       0x65 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.USBD_USR_Callbacks
-                0x08018048       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+                0x08018044       0x1c project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
  .rodata.MIOS32_MIDI_USBH_Callbacks
-                0x08018064       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
-                0x08018064                MIOS32_MIDI_USBH_Callbacks
+                0x08018060       0x10 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+                0x08018060                MIOS32_MIDI_USBH_Callbacks
  .rodata.str1.1
-                0x08018074        0x7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .rodata        0x0801807b       0x80 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08018070        0x7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .rodata        0x08018077       0x80 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
  .rodata.str1.1
-                0x080180fb        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+                0x080180f7        0x4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
  .rodata.CSWTCH.36
-                0x080180ff        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08018104                . = ALIGN (0x4)
- *fill*         0x08018102        0x2 00
+                0x080180fb        0x3 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08018100                . = ALIGN (0x4)
+ *fill*         0x080180fe        0x2 00
  *(.init)
-                0x08018104                . = ALIGN (0x4)
-                0x08018104                __preinit_array_start = .
+                0x08018100                . = ALIGN (0x4)
+                0x08018100                __preinit_array_start = .
  *(.preinit_array)
-                0x08018104                __preinit_array_end = .
-                0x08018104                . = ALIGN (0x4)
-                0x08018104                __init_array_start = .
+                0x08018100                __preinit_array_end = .
+                0x08018100                . = ALIGN (0x4)
+                0x08018100                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
-                0x08018104                __init_array_end = .
-                0x08018104                . = ALIGN (0x4)
+                0x08018100                __init_array_end = .
+                0x08018100                . = ALIGN (0x4)
  *(.fini)
-                0x08018104                . = ALIGN (0x4)
-                0x08018104                __fini_array_start = .
+                0x08018100                . = ALIGN (0x4)
+                0x08018100                __fini_array_start = .
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x08018104                __fini_array_end = .
-                0x08018104                . = ALIGN (0x4)
+                0x08018100                __fini_array_end = .
+                0x08018100                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x08018104                . = ALIGN (0x4)
+                0x08018100                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.init .init.*)
  *(.fini .fini.*)
-                0x08018104                PROVIDE (__preinit_array_start, .)
+                0x08018100                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x08018104                PROVIDE (__preinit_array_end, .)
-                0x08018104                PROVIDE (__init_array_start, .)
+                0x08018100                PROVIDE (__preinit_array_end, .)
+                0x08018100                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x08018104                PROVIDE (__init_array_end, .)
-                0x08018104                PROVIDE (__fini_array_start, .)
+                0x08018100                PROVIDE (__init_array_end, .)
+                0x08018100                PROVIDE (__fini_array_start, .)
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x08018104                PROVIDE (__fini_array_end, .)
-                0x08018108                . = ALIGN (0x8)
- *fill*         0x08018104        0x4 00
+                0x08018100                PROVIDE (__fini_array_end, .)
+                0x08018100                . = ALIGN (0x8)
  *(.rom)
  *(.rom.b)
-                0x08018108                _etext = .
-                0x08018108                _sidata = _etext
+                0x08018100                _etext = .
+                0x08018100                _sidata = _etext
 
-.rel.dyn        0x08018108        0x0
+.rel.dyn        0x08018100        0x0
  .rel.iplt      0x00000000        0x0 project_build/app.o
 
-.data           0x20000000       0x60 load address 0x08018108
+.data           0x20000000       0x60 load address 0x08018100
                 0x20000000                __ram_start = .
                 0x20000000                _sdata = .
                 0x20000000                . = ALIGN (0x80)
@@ -4159,10 +4158,10 @@ END GROUP
                 0x20000060                . = ALIGN (0x4)
                 0x20000060                _edata = .
 
-.igot.plt       0x20000060        0x0 load address 0x08018168
+.igot.plt       0x20000060        0x0 load address 0x08018160
  .igot.plt      0x00000000        0x0 project_build/app.o
 
-.bss            0x20000060     0x3b70 load address 0x08018168
+.bss            0x20000060     0x3b70 load address 0x08018160
                 0x20000060                . = ALIGN (0x4)
                 0x20000060                _sbss = .
  *(.shbss)
@@ -4375,7 +4374,7 @@ END GROUP
                 0x20000060                PROVIDE (__bss_start__, _sbss)
                 0x20003bd0                PROVIDE (__bss_end__, _ebss)
 
-._usrstack      0x20003bd0      0x100 load address 0x08018168
+._usrstack      0x20003bd0      0x100 load address 0x08018160
                 0x20003bd0                . = ALIGN (0x4)
                 0x20003bd0                _susrstack = .
                 0x20003cd0                . = (. + _Minimum_Stack_Size)
@@ -4795,54 +4794,54 @@ END GROUP
  .debug_abbrev  0x00007068      0x2f2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
  .debug_abbrev  0x0000735a      0x350 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_otg.o
 
-.debug_line     0x00000000     0xd31f
+.debug_line     0x00000000     0xd31e
  *(.debug_line)
- .debug_line    0x00000000      0x3ec project_build/app.o
- .debug_line    0x000003ec      0x4d7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
- .debug_line    0x000008c3      0x74a project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
- .debug_line    0x0000100d      0x1c2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
- .debug_line    0x000011cf      0x25b project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
- .debug_line    0x0000142a      0x3ee project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
- .debug_line    0x00001818       0xd6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
- .debug_line    0x000018ee      0xa85 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
- .debug_line    0x00002373      0x62e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_osc.o
- .debug_line    0x000029a1      0x442 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
- .debug_line    0x00002de3      0x2ab project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_spi_midi.o
- .debug_line    0x0000308e      0x2ed project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
- .debug_line    0x0000337b      0x221 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
- .debug_line    0x0000359c      0x1e9 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_bsl.o
- .debug_line    0x00003785      0x49f project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
- .debug_line    0x00003c24      0x255 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
- .debug_line    0x00003e79      0x77b project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
- .debug_line    0x000045f4      0x39e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
- .debug_line    0x00004992      0x29e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
- .debug_line    0x00004c30      0x945 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
- .debug_line    0x00005575      0x588 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
- .debug_line    0x00005afd      0x53b project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
- .debug_line    0x00006038      0x579 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
- .debug_line    0x000065b1      0x389 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
- .debug_line    0x0000693a      0x2d9 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_line    0x00006c13      0x33d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
- .debug_line    0x00006f50      0x3e4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_line    0x00007334      0x591 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
- .debug_line    0x000078c5      0x383 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
- .debug_line    0x00007c48      0x617 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_line    0x0000825f      0x94d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
- .debug_line    0x00008bac      0xb5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_line    0x00009708      0x548 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
- .debug_line    0x00009c50      0x42d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_line    0x0000a07d      0x32a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_line    0x0000a3a7      0x405 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_line    0x0000a7ac      0x47e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
- .debug_line    0x0000ac2a      0x30a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
- .debug_line    0x0000af34      0x3ae project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
- .debug_line    0x0000b2e2      0x4eb project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
- .debug_line    0x0000b7cd      0x9d4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_line    0x0000c1a1      0x3ca project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_line    0x0000c56b      0x374 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_line    0x0000c8df      0x2fe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
- .debug_line    0x0000cbdd      0x48b project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
- .debug_line    0x0000d068      0x2b7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_otg.o
+ .debug_line    0x00000000      0x3eb project_build/app.o
+ .debug_line    0x000003eb      0x4d7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/main.o
+ .debug_line    0x000008c2      0x74a project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/tasks.o
+ .debug_line    0x0000100c      0x1c2 project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/list.o
+ .debug_line    0x000011ce      0x25b project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+ .debug_line    0x00001429      0x3ee project_build//home/karshan/gits/vaayu/software/mios32/trunk//FreeRTOS/Source/portable/MemMang/umm_malloc.o
+ .debug_line    0x00001817       0xd6 project_build//home/karshan/gits/vaayu/software/mios32/trunk//programming_models/traditional/startup_stm32f4xx.o
+ .debug_line    0x000018ed      0xa85 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_midi.o
+ .debug_line    0x00002372      0x62e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_osc.o
+ .debug_line    0x000029a0      0x442 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_uart_midi.o
+ .debug_line    0x00002de2      0x2ab project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_spi_midi.o
+ .debug_line    0x0000308d      0x2ed project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_iic_midi.o
+ .debug_line    0x0000337a      0x221 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/mios32_timestamp.o
+ .debug_line    0x0000359b      0x1e9 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_bsl.o
+ .debug_line    0x00003784      0x49f project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_sys.o
+ .debug_line    0x00003c23      0x255 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_irq.o
+ .debug_line    0x00003e78      0x77b project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_board.o
+ .debug_line    0x000045f3      0x39e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_timer.o
+ .debug_line    0x00004991      0x29e project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_delay.o
+ .debug_line    0x00004c2f      0x945 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb.o
+ .debug_line    0x00005574      0x588 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_usb_midi.o
+ .debug_line    0x00005afc      0x53b project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_uart.o
+ .debug_line    0x00006037      0x579 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/STM32F4xx/mios32_iic.o
+ .debug_line    0x000065b0      0x389 project_build//home/karshan/gits/vaayu/software/mios32/trunk//mios32/common/printf-stdarg.o
+ .debug_line    0x00006939      0x2d9 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_line    0x00006c12      0x33d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_line    0x00006f4f      0x3e4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_line    0x00007333      0x591 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+ .debug_line    0x000078c4      0x383 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
+ .debug_line    0x00007c47      0x617 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_line    0x0000825e      0x94d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_line    0x00008bab      0xb5c project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_line    0x00009707      0x548 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_line    0x00009c4f      0x42d project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_line    0x0000a07c      0x32a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_line    0x0000a3a6      0x405 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_line    0x0000a7ab      0x47e project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_core.o
+ .debug_line    0x0000ac29      0x30a project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_hcs.o
+ .debug_line    0x0000af33      0x3ae project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_ioreq.o
+ .debug_line    0x0000b2e1      0x4eb project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_HOST_Library/Core/src/usbh_stdreq.o
+ .debug_line    0x0000b7cc      0x9d4 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_line    0x0000c1a0      0x3ca project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_line    0x0000c56a      0x374 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_line    0x0000c8de      0x2fe project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd.o
+ .debug_line    0x0000cbdc      0x48b project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_hcd_int.o
+ .debug_line    0x0000d067      0x2b7 project_build//home/karshan/gits/vaayu/software/mios32/trunk//drivers/STM32F4xx/v1.1.0/STM32_USB_OTG_Driver/src/usb_otg.o
 
 .debug_frame    0x00000000     0x45a4
  *(.debug_frame)
