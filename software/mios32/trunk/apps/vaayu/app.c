@@ -50,11 +50,12 @@ static void TASK_LED(void *p);
 
 #define NUM_ENCODERS 8
 #define BUTTON_COLS 2
-#define BUTTON_ROWS 8
-#define LED_PIN (BUTTON_COLS + BUTTON_ROWS)
-#define NUM_LEDS 16
+#define BUTTON_ROWS 16
+// rows 0 - 7 are encoders, 8 - 15 are buttons
+#define LED_PIN (BUTTON_ROWS - (16 - BUTTON_COLS))
+#define NUM_LEDS 32
 int encoder_state[NUM_ENCODERS];
-u8 button_state[BUTTON_COLS]; // if more than 8 rows u8 will need to become u16
+u8 button_state[BUTTON_ROWS][BUTTON_COLS]; // if more than 8 rows u8 will need to become u16
 u8 led_state[NUM_LEDS][3]; // GRB
 
 void reset_encoders() {
@@ -69,7 +70,7 @@ void reset_encoders() {
 /////////////////////////////////////////////////////////////////////////////
 void APP_Init(void)
 {
-  int i, pin, column;
+  int i, pin, row, col;
 
   // initialize all LEDs
   MIOS32_BOARD_LED_Init(0xffffffff);
@@ -78,22 +79,28 @@ void APP_Init(void)
     MIOS32_BOARD_J10_PinInit(pin, MIOS32_BOARD_PIN_MODE_OUTPUT_PP);
   }
 
-  for (pin = BUTTON_COLS; pin < BUTTON_COLS + BUTTON_ROWS; pin++) {
+  for (pin = BUTTON_COLS; pin < 16; pin++) {
     MIOS32_BOARD_J10_PinInit(pin, MIOS32_BOARD_PIN_MODE_INPUT_PD);
   }
 
-  MIOS32_BOARD_J10_PinInit(LED_PIN, MIOS32_BOARD_PIN_MODE_OUTPUT_PP);
+  for (pin = 0; pin < BUTTON_ROWS - (16 - BUTTON_COLS); pin++) {
+    MIOS32_BOARD_J5_PinInit(pin, MIOS32_BOARD_PIN_MODE_INPUT_PD);
+  }
 
-  for (column = 0; column < BUTTON_COLS; column++) {
-    button_state[column] = 0;
+  MIOS32_BOARD_J5_PinInit(LED_PIN, MIOS32_BOARD_PIN_MODE_OUTPUT_PP);
+
+  for (row = 0; row < BUTTON_ROWS; row++) {
+      for (col = 0; col < BUTTON_COLS; col++) {
+          button_state[row][col] = 0;
+      }
   }
 
   reset_encoders();  
 
   for (i = 0; i < NUM_LEDS; i++) {
-    led_state[i][0] = 0x10; 
-    led_state[i][1] = 0x10;
-    led_state[i][2] = 0x10;
+    led_state[i][0] = 0; 
+    led_state[i][1] = 0;
+    led_state[i][2] = 0;
   }
 }
 
@@ -107,19 +114,19 @@ void APP_MIDI_NotifyPackage(mios32_midi_port_t port, mios32_midi_package_t midi_
 }
 
 inline void ws2812_low() {
-  MIOS32_BOARD_J10_PinSet(LED_PIN, 1);
+  MIOS32_BOARD_J5_PinSet(LED_PIN, 1);
 asm volatile("nop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\t");
 
-  MIOS32_BOARD_J10_PinSet(LED_PIN, 0);
+  MIOS32_BOARD_J5_PinSet(LED_PIN, 0);
 asm volatile("nop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\t");
 
 }
 
 inline void ws2812_high() {
-  MIOS32_BOARD_J10_PinSet(LED_PIN, 1);
+  MIOS32_BOARD_J5_PinSet(LED_PIN, 1);
 asm volatile("nop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\t");
 
-  MIOS32_BOARD_J10_PinSet(LED_PIN, 0);
+  MIOS32_BOARD_J5_PinSet(LED_PIN, 0);
 asm volatile("nop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\tnop\n\t");
 }
 
@@ -158,18 +165,18 @@ void update_encoder_state(u8 encoder, u8 ov, u8 nv) {
     if (encoder_state[encoder] < 0) encoder_state[encoder] = 0;
 }
 
-void BUTTON_NotifyToggle(u8 old_value, u8 new_value, u8 col)
+void notify_button(int row, int col, int old_val, int new_val) {
+    if (old_val ^ new_val) {
+        MIOS32_MIDI_SendDebugMessage("press on (%d, %d): %d\n", row, col, new_val);
+        MIOS32_MIDI_SendNoteOn(DEFAULT, Chn1, (col * BUTTON_ROWS + row + 24) & 0x7f, new_val ? 0x7f : 0x0);
+    }
+}
+
+void notify_encoder(int encoder, int old_val, int new_val)
 {
-    // ENCODERS_PER_COL = 4
-    int i;
-    for (i = 0; i < 4; i++) {
-        u8 encoder = col * 4 + i;
-        u8 ov = (old_value & (3 << (i * 2))) >> (i * 2);
-        u8 nv = (new_value & (3 << (i * 2))) >> (i * 2);
-        if (ov ^ nv) {
-            update_encoder_state(encoder, ov, nv);
-            MIOS32_MIDI_SendCC(DEFAULT, Chn1, 0x10 + encoder, encoder_state[encoder]);
-        }
+    if (old_val ^ new_val) {
+        update_encoder_state(encoder, old_val, new_val);
+        MIOS32_MIDI_SendCC(DEFAULT, Chn1, 0x10 + encoder, encoder_state[encoder]);
     }
 }
 
@@ -180,8 +187,15 @@ void setColumns(u8 value) {
   }
 }
 
-u8 getRows() {
-  return (u8)((MIOS32_BOARD_J10_Get() & (((1 << BUTTON_ROWS) - 1) << BUTTON_COLS)) >> BUTTON_COLS);
+void getRows(u8 *out) {
+    int pin;
+    int out_index = 0;
+    for (pin = BUTTON_COLS; pin < 16; pin++) {
+        out[out_index++] = MIOS32_BOARD_J10_PinGet(pin);
+    }
+    for (pin = 0; pin < BUTTON_ROWS - (16 - BUTTON_COLS); pin++) {
+        out[out_index++] = MIOS32_BOARD_J5_PinGet(pin);
+    }
 }
 
 void interpolate(u8 *out, u8 *a, u8 *b, int s) {
@@ -191,7 +205,7 @@ void interpolate(u8 *out, u8 *a, u8 *b, int s) {
     }
 }
 
-void set_color_by_encoder(u8 *c, int v) {
+void set_color_by_encoder_value(u8 *c, int v) {
     u8 blue[] = { 0, 0, 64 };
     u8 white[] = { 32, 32, 32 };
     u8 red[] = { 0, 128, 0 };
@@ -211,33 +225,54 @@ void color_leds_by_encoder_state() {
         // 3 -> n*2 * 3, 
         if (i < 4) {
             x = (BUTTON_COLS * 2) * i;
-            set_color_by_encoder(led_state[x], encoder_state[i]);
-            set_color_by_encoder(led_state[x + BUTTON_COLS], encoder_state[i]);
+            set_color_by_encoder_value(led_state[x], encoder_state[i]);
+            set_color_by_encoder_value(led_state[x + BUTTON_COLS], encoder_state[i]);
         } else {
             x = ((BUTTON_COLS * 2) * (i - 4)) + 1;
-            set_color_by_encoder(led_state[x], encoder_state[i]);
-            set_color_by_encoder(led_state[x + BUTTON_COLS], encoder_state[i]);
+            set_color_by_encoder_value(led_state[x], encoder_state[i]);
+            set_color_by_encoder_value(led_state[x + BUTTON_COLS], encoder_state[i]);
         }
     }
+}
+
+u8 encoder_bits(u8 a, u8 b) {
+    return (a ? 2 : 0) | (b ? 1 : 0);
 }
 
 int time_ = 0;
 void APP_Tick()
 {
-    u8 column;
+    int col, row;
+    u8 rows_out[BUTTON_ROWS];
+
     if (time_ % 10 == 0) {
         TASK_LED(NULL);
     }
 
-	for(column = 0; column < BUTTON_COLS; column++) {
-        u8 row_value;
-        setColumns(1 << column);
+	for (col = 0; col < BUTTON_COLS; col++) {
+        setColumns(1 << col);
+
         MIOS32_DELAY_Wait_uS(100); //TODO fine tune to save time
-        row_value = getRows();
-        if (row_value ^ button_state[column]) {
-            BUTTON_NotifyToggle(button_state[column], row_value, column);
+
+        getRows(rows_out);
+
+        for (row = 0; row < 8; row += 2) { // encoders
+            u8 old_val = encoder_bits(button_state[row + 1][col], button_state[row][col]);
+            u8 new_val = encoder_bits(rows_out[row + 1], rows_out[row]);
+
+            notify_encoder(col * 4 + (row / 2), old_val, new_val);
+
+            button_state[row][col] = rows_out[row];
+            button_state[row + 1][col] = rows_out[row + 1];
         }
-        button_state[column] = row_value;
+        for (row = 8; row < 16; row++) { // buttons
+            u8 old_val = button_state[row][col];
+            u8 new_val = rows_out[row];
+
+            notify_button(row, col, old_val, new_val);
+
+            button_state[row][col] = new_val;
+        }
     }
 
     color_leds_by_encoder_state();
