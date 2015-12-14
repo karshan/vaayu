@@ -235,6 +235,17 @@ void color_leds_by_encoder_state() {
     }
 }
 
+void color_leds_by_button_state() {
+    int row, col;
+    for (row = 8; row < BUTTON_ROWS; row++) {
+        for (col = 0; col < BUTTON_COLS; col++) {
+            led_state[row * BUTTON_COLS + col][0] = 0;
+            led_state[row * BUTTON_COLS + col][1] = button_state[row][col] ? 64 : 0;
+            led_state[row * BUTTON_COLS + col][2] = button_state[row][col] ? 64 : 0;
+        }
+    }
+}
+
 u8 encoder_bits(u8 a, u8 b) {
     return (a ? 2 : 0) | (b ? 1 : 0);
 }
@@ -276,5 +287,6 @@ void APP_Tick()
     }
 
     color_leds_by_encoder_state();
+    color_leds_by_button_state();
     time_++;
 }
