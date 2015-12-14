@@ -95,64 +95,14 @@ void APP_Init(void)
     led_state[i][1] = 0x10;
     led_state[i][2] = 0x10;
   }
-  xTaskCreate(TASK_LED, (signed portCHAR *)"LED", configMINIMAL_STACK_SIZE, NULL, PRIORITY_TASK_LED, NULL);
 }
 
 
-/////////////////////////////////////////////////////////////////////////////
-// This task is running endless in background
-/////////////////////////////////////////////////////////////////////////////
 void APP_Background(void)
 {
 }
 
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called when a MIDI package has been received
-/////////////////////////////////////////////////////////////////////////////
 void APP_MIDI_NotifyPackage(mios32_midi_port_t port, mios32_midi_package_t midi_package)
-{
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called before the shift register chain is scanned
-/////////////////////////////////////////////////////////////////////////////
-void APP_SRIO_ServicePrepare(void)
-{
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called after the shift register chain has been scanned
-/////////////////////////////////////////////////////////////////////////////
-void APP_SRIO_ServiceFinish(void)
-{
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called when a button has been toggled
-// pin_value is 1 when button released, and 0 when button pressed
-/////////////////////////////////////////////////////////////////////////////
-void APP_DIN_NotifyToggle(u32 pin, u32 pin_value)
-{
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called when an encoder has been moved
-// incrementer is positive when encoder has been turned clockwise, else
-// it is negative
-/////////////////////////////////////////////////////////////////////////////
-void APP_ENC_NotifyChange(u32 encoder, s32 incrementer)
-{
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-// This hook is called when a pot has been moved
-/////////////////////////////////////////////////////////////////////////////
-void APP_AIN_NotifyChange(u32 pin, u32 pin_value)
 {
 }
 
@@ -202,7 +152,7 @@ void update_encoder_state(u8 encoder, u8 ov, u8 nv) {
     } else if (ccw[ov] == nv) {
         encoder_state[encoder]--;
     } else {
-        MIOS32_MIDI_SendDebugMessage("ov = %x, nv = %x\n", ov, nv);
+        MIOS32_MIDI_SendDebugMessage("encode: %d: ov = %x, nv = %x\n", encoder, ov, nv);
     }
     if (encoder_state[encoder] >= 127) encoder_state[encoder] = 127;
     if (encoder_state[encoder] < 0) encoder_state[encoder] = 0;
@@ -234,9 +184,50 @@ u8 getRows() {
   return (u8)((MIOS32_BOARD_J10_Get() & (((1 << BUTTON_ROWS) - 1) << BUTTON_COLS)) >> BUTTON_COLS);
 }
 
+void interpolate(u8 *out, u8 *a, u8 *b, int s) {
+    int i;
+    for (i = 0; i < 3; i++) {
+        out[i] = (a[i] * (128 - s) + b[i] * s)/128;
+    }
+}
+
+void set_color_by_encoder(u8 *c, int v) {
+    u8 blue[] = { 32, 0, 32 };
+    u8 white[] = { 0, 0, 64 };
+    u8 red[] = { 0, 128, 0 };
+    if (v <= 64) {
+        interpolate(c, blue, white, v * 2);
+    } else {
+        interpolate(c, white, red, (v - 64) * 2);
+    }
+}
+
+void color_leds_by_encoder_state() {
+    int i, x;
+    for (i = 0; i < NUM_ENCODERS; i++) {
+        // 0 -> 0 % n, n
+        // 1 -> n*2 * 1, n + 1
+        // 2 -> n*2 * 2,
+        // 3 -> n*2 * 3, 
+        if (i < 4) {
+            x = (BUTTON_COLS * 2) * i;
+            set_color_by_encoder(led_state[x], encoder_state[i]);
+            set_color_by_encoder(led_state[x + BUTTON_COLS], encoder_state[i]);
+        } else {
+            x = ((BUTTON_COLS * 2) * (i - 4)) + 1;
+            set_color_by_encoder(led_state[x], encoder_state[i]);
+            set_color_by_encoder(led_state[x + BUTTON_COLS], encoder_state[i]);
+        }
+    }
+}
+
+int time_ = 0;
 void APP_Tick()
 {
     u8 column;
+    if (time_ % 10 == 0) {
+        TASK_LED(NULL);
+    }
 
 	for(column = 0; column < BUTTON_COLS; column++) {
         u8 row_value;
@@ -248,4 +239,7 @@ void APP_Tick()
         }
         button_state[column] = row_value;
     }
+
+    color_leds_by_encoder_state();
+    time_++;
 }
