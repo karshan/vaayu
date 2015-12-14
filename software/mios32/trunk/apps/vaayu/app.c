@@ -52,7 +52,7 @@ static void TASK_LED(void *p);
 #define BUTTON_COLS 2
 #define BUTTON_ROWS 8
 #define LED_PIN (BUTTON_COLS + BUTTON_ROWS)
-#define NUM_LEDS 8
+#define NUM_LEDS 16
 int encoder_state[NUM_ENCODERS];
 u8 button_state[BUTTON_COLS]; // if more than 8 rows u8 will need to become u16
 u8 led_state[NUM_LEDS][3]; // GRB
@@ -90,10 +90,10 @@ void APP_Init(void)
 
   reset_encoders();  
 
-  for (i = 0; i < 24; i++) {
-    led_state[i][i % 3] = 0x10; 
-    led_state[i][(i + 1) % 3] = 0x10;
-    led_state[i][(i + 2) % 3] = 0x10;
+  for (i = 0; i < NUM_LEDS; i++) {
+    led_state[i][0] = 0x10; 
+    led_state[i][1] = 0x10;
+    led_state[i][2] = 0x10;
   }
   xTaskCreate(TASK_LED, (signed portCHAR *)"LED", configMINIMAL_STACK_SIZE, NULL, PRIORITY_TASK_LED, NULL);
 }
