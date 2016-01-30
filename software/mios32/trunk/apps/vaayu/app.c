@@ -11,6 +11,7 @@
 #define NUM_LEDS 32
 u8 button_state[BUTTON_ROWS][BUTTON_COLS]; // if more than 8 rows u8 will need to become u16
 u8 led_state[NUM_LEDS][3]; // GRB
+u8 flush_leds = 0;
 
 enum {
   WAITING_FOR_START,
@@ -26,6 +27,7 @@ s32 SYSEX_Parser(mios32_midi_port_t port, u8 midi_in) {
   } else if (sysex_parser_state == WAITING_FOR_END) {
     if (midi_in == 0xf7) {
       sysex_parser_state = WAITING_FOR_START;
+      flush_leds = 1;
     } else {
       led_state[sysex_parser_ctr/3 % NUM_LEDS][sysex_parser_ctr % 3] = midi_in;
       sysex_parser_ctr++;
@@ -151,8 +153,9 @@ void APP_Tick()
     int col, row;
     u8 rows_out[BUTTON_ROWS];
 
-    if (time_ % 10 == 0) {
+    if (flush_leds == 1 && time_ % 10 == 0) {
         TASK_LED(NULL);
+        flush_leds = 0;
     }
 
 	for (col = 0; col < BUTTON_COLS; col++) {
