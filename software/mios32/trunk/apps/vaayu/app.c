@@ -39,7 +39,15 @@ u8 get_button_val(s32 col, s32 row, u8 button_state[NUM_COLS][NUM_ROWS/8]);
 // global state
 u8 led_state[NUM_LEDS][3];
 u8 button_state[NUM_COLS][NUM_ROWS/8];
-int encoder_state[32];
+
+typedef struct {
+    int val;
+    int saved_val;
+    int debounce_t;
+    int mode;
+} enc_state_t;
+
+enc_state_t encoder_state[32];
 
 void init_led_state() {
   int i;
@@ -53,7 +61,10 @@ void init_led_state() {
 void init_encoder_state() {
   int i;
   for (i = 0; i < 32; i++) {
-    encoder_state[i] = 0;
+    encoder_state[i].val = 0;
+    encoder_state[i].saved_val = 0;
+    encoder_state[i].debounce_t = 0;
+    encoder_state[i].mode = 0;
   }
 }
 
@@ -185,14 +196,16 @@ void encoder_color_2(u8 *rgb, int enc) {
   color_wheel(rgb, ((enc + 256)/(512/64)) % 8);
 }
 
-int _time = 0;
+unsigned int _time = 0;
 void APP_Tick()
 {
   u8 new_buttons[NUM_COLS][NUM_ROWS/8];
   u8 led_flush = 0;
 
-  if (1) { //_time++ % 100 == 0) {
-    int i, j;
+  if (1) {
+    _time++;
+
+    int i, j, enc_i;
 
     read_buttons(new_buttons);
 
@@ -203,19 +216,79 @@ void APP_Tick()
       for (j = 0; j < 8; j++) {
         u8 new_val = get_button_val(i, j, new_buttons);
         u8 old_val = get_button_val(i, j, button_state);
-        if (new_val != old_val) {
-          led_flush = 1;
-          MIOS32_MIDI_SendNoteOn(DEFAULT, Chn1, j*NUM_COLS + i, new_val ? 0x7f : 0);
+
+        if (j % 2 == 1) {
+          enc_i = (j/2)*8 + i;
+          if (encoder_state[enc_i].mode == 0) {
+            led_state[led_col_row_to_number(i, j)][0] = 0;
+            led_state[led_col_row_to_number(i, j)][1] = 0;
+            led_state[led_col_row_to_number(i, j)][2] = 64;
+            if (new_val) {
+              encoder_state[enc_i].mode = 1;
+              encoder_state[enc_i].debounce_t = _time;
+            }
+          } else if (encoder_state[enc_i].mode == 1) {
+            led_state[led_col_row_to_number(i, j)][0] = 64;
+            led_state[led_col_row_to_number(i, j)][1] = 64;
+            led_state[led_col_row_to_number(i, j)][2] = 0;
+            if (new_val == 0 && 
+                  (_time > encoder_state[enc_i].debounce_t + 10 || _time < encoder_state[enc_i].debounce_t)) {
+              encoder_state[enc_i].saved_val = encoder_state[enc_i].val;
+              encoder_state[enc_i].mode = 2;
+            }
+          } else if (encoder_state[enc_i].mode == 2) {
+            led_state[led_col_row_to_number(i, j)][0] = 0;
+            led_state[led_col_row_to_number(i, j)][1] = 64;
+            led_state[led_col_row_to_number(i, j)][2] = 0;
+            if (new_val) {
+              encoder_state[enc_i].mode = 3;
+              encoder_state[enc_i].debounce_t = _time;
+            }
+          } else if (encoder_state[enc_i].mode == 3) {
+            led_state[led_col_row_to_number(i, j)][0] = 64;
+            led_state[led_col_row_to_number(i, j)][1] = 64;
+            led_state[led_col_row_to_number(i, j)][2] = 0;
+            if (new_val == 0 &&
+                  (_time > encoder_state[enc_i].debounce_t + 10 || _time < encoder_state[enc_i].debounce_t)) {
+              encoder_state[enc_i].mode = 4;
+            }
+          } else if (encoder_state[enc_i].mode == 4) {
+            int step = 4;
+            led_state[led_col_row_to_number(i, j)][0] = 64;
+            led_state[led_col_row_to_number(i, j)][1] = 0;
+            led_state[led_col_row_to_number(i, j)][2] = 0;
+            if (encoder_state[enc_i].saved_val == encoder_state[enc_i].val) {
+              encoder_state[enc_i].mode = 0;
+            } else if (encoder_state[enc_i].saved_val > encoder_state[enc_i].val) {
+              if (encoder_state[enc_i].saved_val - encoder_state[enc_i].val <= step) {
+                encoder_state[enc_i].val = encoder_state[enc_i].saved_val;
+              } else {
+                encoder_state[enc_i].val += step;
+              }
+              MIOS32_MIDI_SendCC(DEFAULT, Chn1, enc_i, (encoder_state[enc_i].val/4) + 63);
+            } else {
+              if (encoder_state[enc_i].val - encoder_state[enc_i].saved_val <= step) {
+                encoder_state[enc_i].val = encoder_state[enc_i].saved_val;
+              } else {
+                encoder_state[enc_i].val -= step;
+              }
+              MIOS32_MIDI_SendCC(DEFAULT, Chn1, enc_i, (encoder_state[enc_i].val/4) + 63);
+            }
+          }
+        } else {
+          if (new_val != old_val) {
+            MIOS32_MIDI_SendNoteOn(DEFAULT, Chn1, j*NUM_COLS + i, new_val ? 0x7f : 0);
+          }
+          led_state[led_col_row_to_number(i, j)][0] = new_val * 16;
         }
 
-        led_state[led_col_row_to_number(i, j)][0] = new_val * 16;
       }
     }
 
     // encoders
     for (i = 0; i < NUM_COLS; i++) {
       for (j = 8; j < NUM_ROWS; j += 2) {
-        int enc_i = ((j - 8)/2)*8 + i;
+        enc_i = ((j - 8)/2)*8 + i;
         u8 new_val_1 = get_button_val(i, j, new_buttons);
         u8 new_val_2 = get_button_val(i, j + 1, new_buttons);
 
@@ -224,22 +297,21 @@ void APP_Tick()
 
         if (new_val_1 != old_val_1 || new_val_2 != old_val_2) {
           if (get_button_val(0, 0, button_state)) {
-            encoder_state[enc_i] += encoder_transition(new_val_1, new_val_2, old_val_1, old_val_2);
+            encoder_state[enc_i].val += encoder_transition(new_val_1, new_val_2, old_val_1, old_val_2);
           } else {
-            encoder_state[enc_i] += encoder_transition(new_val_1, new_val_2, old_val_1, old_val_2) * 4;
+            encoder_state[enc_i].val += encoder_transition(new_val_1, new_val_2, old_val_1, old_val_2) * 4;
           }
 
-          if (encoder_state[enc_i] > 256) {
-            encoder_state[enc_i] = 256;
-          } else if (encoder_state[enc_i] < -252) {
-            encoder_state[enc_i] = -252;
+          if (encoder_state[enc_i].val > 256) {
+            encoder_state[enc_i].val = 256;
+          } else if (encoder_state[enc_i].val < -252) {
+            encoder_state[enc_i].val = -252;
           }
-          led_flush = 1;
-          MIOS32_MIDI_SendCC(DEFAULT, Chn1, enc_i, (encoder_state[enc_i]/4) + 63);
+          MIOS32_MIDI_SendCC(DEFAULT, Chn1, enc_i, (encoder_state[enc_i].val/4) + 63);
         }
 
-        encoder_color_1(led_state[led_col_row_to_number(i, j)], encoder_state[enc_i]);
-        encoder_color_2(led_state[led_col_row_to_number(i, j + 1)], encoder_state[enc_i]);
+        encoder_color_1(led_state[led_col_row_to_number(i, j)], encoder_state[enc_i].val);
+        encoder_color_2(led_state[led_col_row_to_number(i, j + 1)], encoder_state[enc_i].val);
       }
     }
 
@@ -250,9 +322,7 @@ void APP_Tick()
       }
     }
 
-    if (led_flush) {
-      write_leds(led_state);
-    }
+    write_leds(led_state);
   }
 }
 
